@@ -33,7 +33,7 @@
   "urls": {
     "site": "https://remi-hernandez.github.io",
     "hubpress": "https://remi-hernandez.github.io",
-    "theme": "//remi-hernandez.github.io/themes/uno",
+    "theme": "//remi-hernandez.github.io/themes/saga",
     "images": "https://remi-hernandez.github.io/images"
   },
   "initialisationConfigComponent": {

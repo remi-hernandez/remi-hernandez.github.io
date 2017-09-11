@@ -2,7 +2,8 @@
   "meta": {
     "username": "remi-hernandez",
     "repositoryName": "remi-hernandez.github.io",
-    "branch": "master"
+    "branch": "master",
+    "cname": ""
   },
   "site": {
     "title": "Pipou's world",
@@ -10,14 +11,24 @@
     "logo": "http://image.flaticon.com/icons/svg/155/155213.svg",
     "cover": "",
     "postsPerPage": "5",
-    "googleAnalytics": "UA-86173845-1"
+    "googleAnalytics": "UA-86173845-1",
+    "delay": "",
+    "disqus": ""
   },
   "socialnetwork": {
     "email": "",
-    "twitter": "https://twitter.com/remi_hernandez"
+    "twitter": "https://twitter.com/remi_hernandez",
+    "github": "",
+    "facebook": "",
+    "googleplus": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "",
+    "stackoverflow": ""
   },
   "theme": {
-    "name": "ghostium"
+    "name": "uno"
   },
   "urls": {
     "site": "https://remi-hernandez.github.io",

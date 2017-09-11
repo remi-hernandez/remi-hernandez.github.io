@@ -38,9 +38,9 @@
     <link href="//fonts.googleapis.com/" rel="dns-prefetch">
     <link href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
-    <link rel="stylesheet" href="//remi-hernandez.github.io/themes/ghostium/assets/css/main.min.css?v=1505129738755"/>
-    <link rel="stylesheet" href="//remi-hernandez.github.io/themes/ghostium/assets/css/custom.css?v=1505129738755"/>
-    <link rel="stylesheet" href="//remi-hernandez.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1505129738755"/>
+    <link rel="stylesheet" href="//remi-hernandez.github.io/themes/ghostium/assets/css/main.min.css?v=1505129934107"/>
+    <link rel="stylesheet" href="//remi-hernandez.github.io/themes/ghostium/assets/css/custom.css?v=1505129934107"/>
+    <link rel="stylesheet" href="//remi-hernandez.github.io/themes/ghostium/assets/css/asciidoctor-foundation.css?v=1505129934107"/>
 
 
 
@@ -70,7 +70,7 @@
       GHOSTIUM.enablePjax = typeof enable_pjax !== 'undefined' ? enable_pjax : true;
     </script>
 
-    <script src="//remi-hernandez.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1505129738755"></script>
+    <script src="//remi-hernandez.github.io/themes/ghostium/assets/js/head-scripts.min.js?v=1505129934107"></script>
 
     <link rel="canonical" href="https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html" />
     <meta name="referrer" content="origin" />
@@ -82,8 +82,8 @@
     <meta property="og:url" content="https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html" />
     <meta property="article:published_time" content="2017-04-04T00:00:00.000Z" />
     <meta property="article:tag" content="vim" />
-    <meta property="article:tag" content=" tips" />
-    <meta property="article:tag" content=" shortcuts" />
+    <meta property="article:tag" content="tips" />
+    <meta property="article:tag" content="shortcuts" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Vim tips and shortcuts" />
@@ -105,7 +105,7 @@
     "headline": "Vim tips and shortcuts",
     "url": "https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html",
     "datePublished": "2017-04-04T00:00:00.000Z",
-    "keywords": "vim,  tips,  shortcuts",
+    "keywords": "vim, tips, shortcuts",
     "description": "Vim http://www.thegeekstuff.com/2009/04/ctags-taglist-vi-vim-editor-as-sourece-code-browser/ NerdTree : http://ngressier.developpez.com/articles/vim/vim-plugin-nerdtree/            nmap &amp;lt;silent&amp;gt; &amp;lt;C-D&amp;gt; :NERDTreeToggle&amp;lt;CR&amp;gt; &quot;remap l&amp;#8217;ouverture de nerdtree (ctrl-e devient ctrl-d) (si tu as spf13 commente la ligne map &amp;lt;C-e&amp;gt;"
 }
     </script>
@@ -174,7 +174,7 @@
                 <li class="post-meta-item">
                   <span class="tags"><i class="fa fa-tags"></i>
                       <span>
-                      <a href="https://remi-hernandez.github.io/tag/vim/">vim</a>, <a href="https://remi-hernandez.github.io/tag/tips/"> tips</a>, <a href="https://remi-hernandez.github.io/tag/shortcuts/"> shortcuts</a></span>
+                      <a href="https://remi-hernandez.github.io/tag/vim/">vim</a>, <a href="https://remi-hernandez.github.io/tag/tips/">tips</a>, <a href="https://remi-hernandez.github.io/tag/shortcuts/">shortcuts</a></span>
                   </span>
                 </li>
               <li class="post-meta-item">
@@ -198,9 +198,7 @@
             </div>
           </aside>
           <div itemprop="articleBody" class="post-body">
-            <div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
+            <div class="paragraph">
 <p>Vim</p>
 </div>
 <div class="paragraph">
@@ -219,35 +217,36 @@ liens op : <a href="http://vimcasts.org/" class="bare">http://vimcasts.org/</a><
 <p>set paste   - passe en mode paste</p>
 </div>
 <div class="paragraph">
-<p>en mode insert (i)
-ctrl-w      - supprime le mot précédent le curseur
-ctrl-u      - supprime la ligne précédent le curseur</p>
+<p>en mode insert (i)</p>
 </div>
-<div class="paragraph">
-<p>mode commande (esc)</p>
-</div>
-<div class="paragraph">
-<p>i          - passe en mode insertion avant le curseur
+<div class="listingblock">
+<div class="content">
+<pre>ctrl-w      - supprime le mot précédent le curseur
+ctrl-u      - supprime la ligne précédent le curseur
+
+mode commande (esc)
+
+i          - passe en mode insertion avant le curseur
 a          - passe en mode insertion après le curseur
 ctrl+d     - scroll vers le bas et déplace le curseur vers le bas de mi écran
 ctrl+u     - scroll vers le haut et déplace le curseur vers le haut de mi écran
 ctrl+e     - scroll vers le bas sans déplacer le curseur
 ctrl+y     - scroll vers le haut sans déplacer le curseur
 zz         - scroll pour mettre la ligne courante au millieu de l'écran
-zt         - idem mais monte en haut de l&#8217;ecran
-zb         - idem mais descends en bas de l&#8217;ecran
+zt         - idem mais monte en haut de l'ecran
+zb         - idem mais descends en bas de l'ecran
 ^          - se déplace au premier caractère de la ligne
 w          - se déplacer au début du mot suivant
 e          - se déplacer à la fin du mot suivant
 b          - se déplacer au début du mot précédent
-cw         - supprime du curseur jusqu&#8217;a la fin du mot et passe en mode insert
+cw         - supprime du curseur jusqu'a la fin du mot et passe en mode insert
 { ou }     - se déplacer de paragraphe en paragraphe
-%          - aller à l&#8217;occurence suivante du caractère (ex accolade fermante)
+%          - aller à l'occurence suivante du caractère (ex accolade fermante)
 *          - chercher le mot sur lequel est le curseur
 [I         - show lines with matching word under cursor
 mk         - mark current position
 'k         - move to mark k
-d&#8217;k        - delete from current position to mark k
+d'k        - delete from current position to mark k
 J          - Join la ligne suivante à la fin de la courante
 R          - passe en mode replace
 V          - mode visual : sélectionne la ligne courante
@@ -264,40 +263,33 @@ N          - previous pattern
 - ou +     - monte ou descends de ligne en se mettant au premier caractère de la ligne.
 ctrl+g     - cherche le pattern courant
 ctrl+n     - autocompletion (et ctrl+p pour aller en arrière)
-ctrl+x, ctrl+f - défini l&#8217;autocompletion sur les fichiers (path)
-      &#8594; /lictrlx, ctrlf bababa / ctrlx, ctrlf etc</p>
-</div>
-<div class="paragraph">
-<p>zf         - crée un fold sur la sélection (selectionne les lignes en visual avant)
+ctrl+x, ctrl+f - défini l'autocompletion sur les fichiers (path)
+      -&gt; /lictrlx, ctrlf bababa / ctrlx, ctrlf etc
+
+zf         - crée un fold sur la sélection (selectionne les lignes en visual avant)
 zo         - open fold
 zc         - close fold
 zO         - open all folds
 zC         - close all folds
-zr         - open fold recursivly</p>
-</div>
-<div class="paragraph">
-<p>Splits :</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Ctrl+W +/-: increase/decrease height
-Ctrl+W &gt;/&lt;: increase/decrease width
-Ctrl+W _: set height (ex. 50&lt;C-w&gt;_)
-Ctrl+W |: set width (ex. 50&lt;C-w&gt;|)
-Ctrl+W =: equalize width and height of all windows</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Mode visual:</p>
-</div>
-</div>
-</div>
-<h1 id="__indente_correctement_la_selection" class="sect0">- indente correctement la selection</h1>
-<div class="paragraph">
-<p>commandes :</p>
-</div>
-<div class="paragraph">
-<p>:%s/search_for_this/replace_with_this/c - confirm each change
+zr         - open fold recursivly
+
+Splits :
+
+
+    Ctrl+W +/-: increase/decrease height
+    Ctrl+W &gt;/&lt;: increase/decrease width
+    Ctrl+W _: set height (ex. 50&lt;C-w&gt;_)
+    Ctrl+W |: set width (ex. 50&lt;C-w&gt;|)
+    Ctrl+W =: equalize width and height of all windows
+
+Mode visual:
+
+=       - indente correctement la selection
+
+
+commandes :
+
+:%s/search_for_this/replace_with_this/c - confirm each change
 :e ou :edit monfichier.py - edit le fichier
 :find pattern             - trouve le fichier {pattern} and :edit dessus
 :find *spec               - en faisant tab, vas proposer tous les fichiers finissant par spec
@@ -305,10 +297,10 @@ Ctrl+W =: equalize width and height of all windows</pre>
 :set nolist
 :edit seul ou :edit!      - reload un fichier (ex : modifié ailleurs) et ! sans tenir compte des modifs (:vsp ou :sp pour avoir les 2 fichiers :3)
 :diffthis                 - passe en mode diff sur le fichier
-:diffoff</p>
-</div>
-<div class="paragraph">
-<p>tabs :
+:diffoff
+
+
+tabs :
 :tabedit {file}   edit specified file in a new tab
 :tabfind {file}   open a new tab with filename given, searching the 'path' to find it
 :tabclose         close current tab
@@ -318,13 +310,11 @@ Ctrl+W =: equalize width and height of all windows</pre>
 :tabm 0       move current tab to first
 :tabm         move current tab to last
 :tabm {i}     move current tab to position i+1
-{i}gt         go to tab in position i</p>
-</div>
-<div class="paragraph">
-<p>Basique giseh :</p>
-</div>
-<div class="paragraph">
-<p>$cat ~/.vimrc
+{i}gt         go to tab in position i
+
+Basique vim :
+
+$cat ~/.vimrc
 set nu
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
@@ -334,33 +324,27 @@ set wildmenu
 set foldmethod=manual
 colorscheme peachpuff
 colorscheme gruvbox
-nnoremap q a"&lt;Esc&gt; &#8594; permet d&#8217;avoir la double quote
+nnoremap q a"&lt;Esc&gt; -&gt; permet d'avoir la double quote
 nnoremap Q i"&lt;Esc&gt;
-set path+= **</p>
-</div>
-<div class="paragraph">
-<p>Next tab: gt
+set path+= **
+
+
+Next tab: gt
 Prior tab: gT
-Numbered tab: nngt</p>
+Numbered tab: nngt
+
+Need to understand / learn :
+
+:b pattern -&gt; lets you autocomplete an
+les tags (ctrl + x, ctrl + ] -&gt; autocomplete with tags)
+would use ctags and then just use :tag to jump to the definition and :pop to come back
+
+ To stop indenting when pasting with the mouse, add this to your .vimrc:
+
+:set pastetoggle=&lt;f5&gt;
+
+then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 </div>
-<div class="paragraph">
-<p>Need to understand / learn :</p>
-</div>
-<div class="paragraph">
-<p>:b pattern &#8594; lets you autocomplete an
-les tags (ctrl + x, ctrl + ] &#8594; autocomplete with tags)
-would use ctags and then just use :tag to jump to the definition and :pop to come back</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>To stop indenting when pasting with the mouse, add this to your .vimrc:</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>:set pastetoggle=&lt;f5&gt;</p>
-</div>
-<div class="paragraph">
-<p>then try hitting the F5 key while in insert mode (or just :set paste).</p>
 </div>
           </div>
           <footer class="post-footer">
@@ -425,7 +409,7 @@ would use ctags and then just use :tag to jump to the definition and :pop to com
         hljs.initHighlightingOnLoad();
       </script>
 
-    <script src="//remi-hernandez.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1505129738755"></script>
+    <script src="//remi-hernandez.github.io/themes/ghostium/assets/js/foot-scripts.min.js?v=1505129934107"></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

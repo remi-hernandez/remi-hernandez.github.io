@@ -13,10 +13,10 @@ soluce : map <F9> <plug>NERDTreeToggle<CR>
 https://dougblack.io/words/a-good-vimrc.html | config
 liens op : http://vimcasts.org/
 
-set paste   - passe en mode paste
 
-en mode insert (i)
 ----
+en mode insert (i)
+
 ctrl-w      - supprime le mot précédent le curseur
 ctrl-u      - supprime la ligne précédent le curseur
 
@@ -94,6 +94,7 @@ commandes :
 :edit seul ou :edit!      - reload un fichier (ex : modifié ailleurs) et ! sans tenir compte des modifs (:vsp ou :sp pour avoir les 2 fichiers :3)
 :diffthis                 - passe en mode diff sur le fichier
 :diffoff 
+:set paste                - passe en mode paste
 
 
 tabs : 

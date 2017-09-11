@@ -1,5 +1,6 @@
 = Google maps zoom theory and example with {C++/qt ; QWT}
 :hp-tags: c++, qwt plot, qt, zoom, google maps
+:hp-image: /images/qwt_plot.png
 
 ===== Theory
 

@@ -16,6 +16,7 @@ liens op : http://vimcasts.org/
 set paste   - passe en mode paste
 
 en mode insert (i)
+----
 ctrl-w      - supprime le mot précédent le curseur
 ctrl-u      - supprime la ligne précédent le curseur
 
@@ -107,7 +108,7 @@ tabs :
 :tabm {i}     move current tab to position i+1
 {i}gt         go to tab in position i
 
-Basique giseh : 
+Basique vim : 
 
 $cat ~/.vimrc
 set nu
@@ -139,3 +140,4 @@ would use ctags and then just use :tag to jump to the definition and :pop to com
 :set pastetoggle=<f5>
 
 then try hitting the F5 key while in insert mode (or just :set paste). 
+----

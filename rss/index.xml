@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Sep 2017 11:38:54 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Send a mail on gmail via python]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 11 Sep 2017 11:40:20 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Send a mail on gmail via python]]></title><description><![CDATA[<div class="paragraph">
 <p>Code to send a mail via gmail with an attachment</p>
 </div>
 <div class="listingblock">
@@ -56,15 +56,11 @@ soluce : map &lt;F9&gt; &lt;plug&gt;NERDTreeToggle&lt;CR&gt;</p>
 <p><a href="https://dougblack.io/words/a-good-vimrc.html" class="bare">https://dougblack.io/words/a-good-vimrc.html</a> | config
 liens op : <a href="http://vimcasts.org/" class="bare">http://vimcasts.org/</a></p>
 </div>
-<div class="paragraph">
-<p>set paste   - passe en mode paste</p>
-</div>
-<div class="paragraph">
-<p>en mode insert (i)</p>
-</div>
 <div class="listingblock">
 <div class="content">
-<pre>ctrl-w      - supprime le mot précédent le curseur
+<pre>en mode insert (i)
+
+ctrl-w      - supprime le mot précédent le curseur
 ctrl-u      - supprime la ligne précédent le curseur
 
 mode commande (esc)
@@ -141,6 +137,7 @@ commandes :
 :edit seul ou :edit!      - reload un fichier (ex : modifié ailleurs) et ! sans tenir compte des modifs (:vsp ou :sp pour avoir les 2 fichiers :3)
 :diffthis                 - passe en mode diff sur le fichier
 :diffoff
+:set paste                - passe en mode paste
 
 
 tabs :

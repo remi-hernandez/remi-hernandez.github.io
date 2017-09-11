@@ -45,7 +45,7 @@ TOP FL410 MOV E 10KT NC
 
 
 [source,python]
-____
+----
     import re
    
     file_list = ["6420.txt", "6421.txt" ,"6422.txt" ,"6423.txt" ,"6440.txt"
@@ -68,4 +68,4 @@ ____
         f = open(file_name, "w")
         f.write(new_content)
         f.close()
-____
+----

@@ -1,5 +1,6 @@
 = Send a mail on gmail via python
 :hp-tags: python, mail
+:hp-image: /images/cat.jpg
 
 Code to send a mail via gmail with an attachment 
 

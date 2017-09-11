@@ -1,5 +1,7 @@
 = C/C++ tips
 :hp-tags: c, c++, tips
+:hp-image: /images/cpp.jpg
+
 
 ==== What's here ?
 

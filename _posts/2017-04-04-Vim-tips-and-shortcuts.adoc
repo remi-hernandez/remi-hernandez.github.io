@@ -1,5 +1,6 @@
 = Vim tips and shortcuts
-:hp-tags: vim, tips, shortcuts,
+:hp-tags: vim, tips, shortcuts
+:hp-image: /vim.png
 
 
 Vim

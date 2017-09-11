@@ -28,12 +28,12 @@
     "stackoverflow": ""
   },
   "theme": {
-    "name": "uno"
+    "name": "saga"
   },
   "urls": {
     "site": "https://remi-hernandez.github.io",
     "hubpress": "https://remi-hernandez.github.io",
-    "theme": "//remi-hernandez.github.io/themes/ghostium",
+    "theme": "//remi-hernandez.github.io/themes/uno",
     "images": "https://remi-hernandez.github.io/images"
   },
   "initialisationConfigComponent": {

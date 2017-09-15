@@ -161,3 +161,28 @@ strcpy();
 #pragma warning(pop)
 #endif
 ----
+
+==== create a class to not include it
+
+When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don't include the "myClass.h", include it only in cpp and prefer this way for the .h : 
+
+[source,cpp]
+----
+# include <someStuff>
+
+namespace tata { namespace tutu {
+	class myClass;
+}}
+
+class testClass 
+{
+public:
+	testClass();
+
+private:
+	tata::tutu::myClass * _myPtr;
+};
+
+----
+
+

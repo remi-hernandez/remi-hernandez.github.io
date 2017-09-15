@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 15 Sep 2017 15:33:59 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Send a mail on gmail via python]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 15 Sep 2017 15:36:17 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Send a mail on gmail via python]]></title><description><![CDATA[<div class="paragraph">
 <p>Code to send a mail via gmail with an attachment</p>
 </div>
 <div class="listingblock">
@@ -400,14 +400,14 @@ TOP FL410 MOV E 10KT NC</p>
         f.close()</code></pre>
 </div>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-regex.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-regex.html</guid><category><![CDATA[python]]></category><category><![CDATA[regex]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[C/C++ tips]]></title><description><![CDATA[<div class="sect3">
-<h4 id="_what_s_here">What&#8217;s here ?</h4>
+</div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-regex.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-regex.html</guid><category><![CDATA[python]]></category><category><![CDATA[regex]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[C/C++ tips]]></title><description><![CDATA[<div class="sect2">
+<h3 id="_what_s_here">What&#8217;s here ?</h3>
 <div class="paragraph">
 <p>Here you will find some tips n tricks around C++.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_ternary">Ternary</h4>
+<div class="sect2">
+<h3 id="_ternary">Ternary</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">bool test = true;
@@ -416,8 +416,8 @@ TOP FL410 MOV E 10KT NC</p>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_get_int_len_on_linux_and_windows">Get int* len on linux and windows</h4>
+<div class="sect2">
+<h3 id="_get_int_len_on_linux_and_windows">Get int* len on linux and windows</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">#include &lt;stdio.h&gt;
@@ -445,8 +445,8 @@ int main(int argc, char**argv)
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_two_ways_to_iterate">Two ways to iterate</h4>
+<div class="sect2">
+<h3 id="_two_ways_to_iterate">Two ways to iterate</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">std::vector&lt;double&gt; latWayPoints;
@@ -457,7 +457,6 @@ for (std::vector&lt;double&gt;::iterator it = latWaypoints.begin(); it != latWay
 
 for (double lon: lonWaypoints)
     qDebug() &lt;&lt; "&gt;&gt; latWay : " &lt;&lt; lon;</code></pre>
-</div>
 </div>
 </div>
 <div class="sect3">
@@ -481,8 +480,9 @@ onMyEvent: {
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_cast">cast</h4>
+</div>
+<div class="sect2">
+<h3 id="_cast">cast</h3>
 <div class="paragraph">
 <p>dynamic_cast pour les classes héritées surtout,
 static_cast pour les types de base,
@@ -490,8 +490,8 @@ reinterpret_cast pour forcer un cast de n&#8217;importe quoi vers n&#8217;import
 et const_cast pour pouvoir passer des string en entrée à des vieilles fonctions C qui veulent des char*</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_concat_arrays_c_style_in_c">Concat arrays C style in C++</h4>
+<div class="sect2">
+<h3 id="_concat_arrays_c_style_in_c">Concat arrays C style in C++</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">void concatArrays(unsigned char * &amp;src, int dstOffset, unsigned char * dst)
@@ -541,8 +541,8 @@ int main()
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_pragma_and_warnings">Pragma and warnings</h4>
+<div class="sect2">
+<h3 id="_pragma_and_warnings">Pragma and warnings</h3>
 <div class="paragraph">
 <p>You can use pragma to lower the warnings level at build time or to disable some kinds of warnings.</p>
 </div>
@@ -567,10 +567,10 @@ strcpy();
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_create_a_class_to_not_include_it">create a class to not include it</h4>
+<div class="sect2">
+<h3 id="_create_a_class_to_not_include_it">create a class to not include it</h3>
 <div class="paragraph">
-<p>When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don&#8217;t include the "myClass.h", include it only in cpp and prefer this way for the .h :</p>
+<p>When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don&#8217;t include the "myClass.h", include it only in cpp and prefer this way :</p>
 </div>
 <div class="listingblock">
 <div class="content">

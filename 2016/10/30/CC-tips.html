@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1505489639548" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1505489639548" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1505489777522" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1505489777522" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2016/10/30/CC-tips.html" />
     <meta name="referrer" content="origin" />
@@ -85,14 +85,14 @@
 <main id="main" class="content">
     <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-c tag-c tag-tips">
         <section class="post-content">
-            <div class="sect3">
-<h4 id="_what_s_here">What&#8217;s here ?</h4>
+            <div class="sect2">
+<h3 id="_what_s_here">What&#8217;s here ?</h3>
 <div class="paragraph">
 <p>Here you will find some tips n tricks around C++.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_ternary">Ternary</h4>
+<div class="sect2">
+<h3 id="_ternary">Ternary</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">bool test = true;
@@ -101,8 +101,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_get_int_len_on_linux_and_windows">Get int* len on linux and windows</h4>
+<div class="sect2">
+<h3 id="_get_int_len_on_linux_and_windows">Get int* len on linux and windows</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">#include &lt;stdio.h&gt;
@@ -130,8 +130,8 @@ int main(int argc, char**argv)
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_two_ways_to_iterate">Two ways to iterate</h4>
+<div class="sect2">
+<h3 id="_two_ways_to_iterate">Two ways to iterate</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">std::vector&lt;double&gt; latWayPoints;
@@ -142,7 +142,6 @@ for (std::vector&lt;double&gt;::iterator it = latWaypoints.begin(); it != latWay
 
 for (double lon: lonWaypoints)
     qDebug() &lt;&lt; "&gt;&gt; latWay : " &lt;&lt; lon;</code></pre>
-</div>
 </div>
 </div>
 <div class="sect3">
@@ -166,8 +165,9 @@ onMyEvent: {
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_cast">cast</h4>
+</div>
+<div class="sect2">
+<h3 id="_cast">cast</h3>
 <div class="paragraph">
 <p>dynamic_cast pour les classes héritées surtout,
 static_cast pour les types de base,
@@ -175,8 +175,8 @@ reinterpret_cast pour forcer un cast de n&#8217;importe quoi vers n&#8217;import
 et const_cast pour pouvoir passer des string en entrée à des vieilles fonctions C qui veulent des char*</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_concat_arrays_c_style_in_c">Concat arrays C style in C++</h4>
+<div class="sect2">
+<h3 id="_concat_arrays_c_style_in_c">Concat arrays C style in C++</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-cpp" data-lang="cpp">void concatArrays(unsigned char * &amp;src, int dstOffset, unsigned char * dst)
@@ -226,8 +226,8 @@ int main()
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_pragma_and_warnings">Pragma and warnings</h4>
+<div class="sect2">
+<h3 id="_pragma_and_warnings">Pragma and warnings</h3>
 <div class="paragraph">
 <p>You can use pragma to lower the warnings level at build time or to disable some kinds of warnings.</p>
 </div>
@@ -252,10 +252,10 @@ strcpy();
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_create_a_class_to_not_include_it">create a class to not include it</h4>
+<div class="sect2">
+<h3 id="_create_a_class_to_not_include_it">create a class to not include it</h3>
 <div class="paragraph">
-<p>When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don&#8217;t include the "myClass.h", include it only in cpp and prefer this way for the .h :</p>
+<p>When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don&#8217;t include the "myClass.h", include it only in cpp and prefer this way :</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -304,7 +304,7 @@ private:
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1505489639548"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1505489777522"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

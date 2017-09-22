@@ -202,4 +202,16 @@ int main()
 }
 ----
 
+=== osg geometry usage
+
+[source,cpp]
+----
+#include <osgEarthFeatures/Feature>
+#include <osgEarthFeatures/GeometryUtils>
+
+std::string wkt_geom; // geom at wkt format
+
+osgEarth::Symbology::Geometry geom = osgEarth::Features::GeometryUtils::geometryFromWKT(wkt_geom);
+
+----
 

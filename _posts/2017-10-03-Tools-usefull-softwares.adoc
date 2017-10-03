@@ -1,0 +1,9 @@
+= Tools / usefull softwares
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+:hp-tags: tools, sowftware, utils
+// :hp-alt-title: My English Title
+
+=== Meld
+
+tool to merge files with svn : http://meldmerge.org/

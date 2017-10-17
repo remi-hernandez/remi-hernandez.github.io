@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 03 Oct 2017 09:50:04 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Oct 2017 15:17:17 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>
 <div class="paragraph">
 <p>tool to merge files with svn : <a href="http://meldmerge.org/" class="bare">http://meldmerge.org/</a></p>
@@ -71,6 +71,9 @@ server.quit()</code></pre>
 soluce : map &lt;F9&gt; &lt;plug&gt;NERDTreeToggle&lt;CR&gt;</p>
 </div>
 <div class="paragraph">
+<p>multipaste : <a href="https://stackoverflow.com/questions/7163947/paste-multiple-times" class="bare">https://stackoverflow.com/questions/7163947/paste-multiple-times</a></p>
+</div>
+<div class="paragraph">
 <p><a href="https://dougblack.io/words/a-good-vimrc.html" class="bare">https://dougblack.io/words/a-good-vimrc.html</a> | config
 liens op : <a href="http://vimcasts.org/" class="bare">http://vimcasts.org/</a></p>
 </div>
@@ -97,6 +100,9 @@ w          - se déplacer au début du mot suivant
 e          - se déplacer à la fin du mot suivant
 b          - se déplacer au début du mot précédent
 cw         - supprime du curseur jusqu'a la fin du mot et passe en mode insert
+y 		   - copie la sélection (sélectione avec v)
+gv		   - sélectionne la dernière sélection
+gvy        - copie la dernière sélection
 { ou }     - se déplacer de paragraphe en paragraphe
 %          - aller à l'occurence suivante du caractère (ex accolade fermante)
 *          - chercher le mot sur lequel est le curseur

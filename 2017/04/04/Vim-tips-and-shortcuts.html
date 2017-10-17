@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1505131138057" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1505131138057" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1508253437691" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1508253437691" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html" />
     <meta name="referrer" content="origin" />
@@ -76,7 +76,7 @@
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">Vim tips and shortcuts</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1491256800" datetime="2017-04-04T00:00" title="04 April 2017">5 months ago</time></span>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1491256800" datetime="2017-04-04T00:00" title="04 April 2017">6 months ago</time></span>
             <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="https://remi-hernandez.github.io/tag/vim/">vim</a>, <a href="https://remi-hernandez.github.io/tag/tips/">tips</a>, <a href="https://remi-hernandez.github.io/tag/shortcuts/">shortcuts</a></span>
             <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="https://remi-hernandez.github.io/author/remi-hernandez/">Remi Hernandez</a></span></span>
     </section>
@@ -95,6 +95,9 @@
 <p>NerdTree : <a href="http://ngressier.developpez.com/articles/vim/vim-plugin-nerdtree/" class="bare">http://ngressier.developpez.com/articles/vim/vim-plugin-nerdtree/</a>
            nmap &lt;silent&gt; &lt;C-D&gt; :NERDTreeToggle&lt;CR&gt; "remap l&#8217;ouverture de nerdtree (ctrl-e devient ctrl-d) (si tu as spf13 commente la ligne map &lt;C-e&gt; &lt;plug&gt;Ne[&#8230;&#8203;]
 soluce : map &lt;F9&gt; &lt;plug&gt;NERDTreeToggle&lt;CR&gt;</p>
+</div>
+<div class="paragraph">
+<p>multipaste : <a href="https://stackoverflow.com/questions/7163947/paste-multiple-times" class="bare">https://stackoverflow.com/questions/7163947/paste-multiple-times</a></p>
 </div>
 <div class="paragraph">
 <p><a href="https://dougblack.io/words/a-good-vimrc.html" class="bare">https://dougblack.io/words/a-good-vimrc.html</a> | config
@@ -123,6 +126,9 @@ w          - se déplacer au début du mot suivant
 e          - se déplacer à la fin du mot suivant
 b          - se déplacer au début du mot précédent
 cw         - supprime du curseur jusqu'a la fin du mot et passe en mode insert
+y 		   - copie la sélection (sélectione avec v)
+gv		   - sélectionne la dernière sélection
+gvy        - copie la dernière sélection
 { ou }     - se déplacer de paragraphe en paragraphe
 %          - aller à l'occurence suivante du caractère (ex accolade fermante)
 *          - chercher le mot sur lequel est le curseur
@@ -258,7 +264,7 @@ then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1505131138057"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1508253437691"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

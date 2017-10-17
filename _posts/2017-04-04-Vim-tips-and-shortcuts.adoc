@@ -11,6 +11,8 @@ NerdTree : http://ngressier.developpez.com/articles/vim/vim-plugin-nerdtree/
            nmap <silent> <C-D> :NERDTreeToggle<CR> "remap l'ouverture de nerdtree (ctrl-e devient ctrl-d) (si tu as spf13 commente la ligne map <C-e> <plug>Ne[...]
 soluce : map <F9> <plug>NERDTreeToggle<CR>
 
+multipaste : https://stackoverflow.com/questions/7163947/paste-multiple-times
+
 https://dougblack.io/words/a-good-vimrc.html | config
 liens op : http://vimcasts.org/
 
@@ -37,6 +39,9 @@ w          - se déplacer au début du mot suivant
 e          - se déplacer à la fin du mot suivant
 b          - se déplacer au début du mot précédent
 cw         - supprime du curseur jusqu'a la fin du mot et passe en mode insert
+y 		   - copie la sélection (sélectione avec v)
+gv		   - sélectionne la dernière sélection
+gvy        - copie la dernière sélection
 { ou }     - se déplacer de paragraphe en paragraphe
 %          - aller à l'occurence suivante du caractère (ex accolade fermante)
 *          - chercher le mot sur lequel est le curseur

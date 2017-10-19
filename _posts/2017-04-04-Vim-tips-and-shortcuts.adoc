@@ -21,7 +21,7 @@ alt v, alt v : active / désactive fake vim
 dans options / editeur de texte / completion / active completion : manually avec ctrl espace comme ça la popup ne gène pas lors de petites modifs pour le echap (double echap, un pour la popup et un pour mode commande).
 
 ajouter dans fakeVim/command mapping : Run run
-image::http://github.com/remi-hernandez/remi-hernandez.github.io/images/screen_options_vim_qt.png
+image::http://github.com/remi-hernandez/remi-hernandez.github.io/images/screen_options_vim_qt.png[]
 dans le _vimrc (outils/options/fakeVim/lire .vimrc depuis...)
 map qq :run<CR>
 

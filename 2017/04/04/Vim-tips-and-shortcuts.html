@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1508253437691" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1508253437691" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1508428309283" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1508428309283" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html" />
     <meta name="referrer" content="origin" />
@@ -76,7 +76,7 @@
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">Vim tips and shortcuts</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1491256800" datetime="2017-04-04T00:00" title="04 April 2017">6 months ago</time></span>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1491256800" datetime="2017-04-04T00:00" title="04 April 2017">7 months ago</time></span>
             <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="https://remi-hernandez.github.io/tag/vim/">vim</a>, <a href="https://remi-hernandez.github.io/tag/tips/">tips</a>, <a href="https://remi-hernandez.github.io/tag/shortcuts/">shortcuts</a></span>
             <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="https://remi-hernandez.github.io/author/remi-hernandez/">Remi Hernandez</a></span></span>
     </section>
@@ -85,7 +85,9 @@
 <main id="main" class="content">
     <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-vim tag-tips tag-shortcuts">
         <section class="post-content">
-            <div class="paragraph">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
 <p>Vim</p>
 </div>
 <div class="paragraph">
@@ -102,6 +104,20 @@ soluce : map &lt;F9&gt; &lt;plug&gt;NERDTreeToggle&lt;CR&gt;</p>
 <div class="paragraph">
 <p><a href="https://dougblack.io/words/a-good-vimrc.html" class="bare">https://dougblack.io/words/a-good-vimrc.html</a> | config
 liens op : <a href="http://vimcasts.org/" class="bare">http://vimcasts.org/</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_qt_creator_config">qt-creator config</h3>
+<div class="paragraph">
+<p>alt v, alt v : active / désactive fake vim
+dans options / editeur de texte / completion / active completion : manually avec ctrl espace comme ça la popup ne gène pas lors de petites modifs pour le echap (double echap, un pour la popup et un pour mode commande).</p>
+</div>
+<div class="paragraph">
+<p>ajouter dans fakeVim/command mapping : Run run
+image::http://github.com/remi-hernandez/remi-hernandez.github.io/images/screen_options_vim_qt.png
+dans le _vimrc (outils/options/fakeVim/lire .vimrc depuis&#8230;&#8203;)
+map qq :run&lt;CR&gt;</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -236,6 +252,7 @@ would use ctags and then just use :tag to jump to the definition and :pop to com
 then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 </div>
 </div>
+</div>
         </section>
 
     </article>
@@ -264,7 +281,7 @@ then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1508253437691"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1508428309283"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

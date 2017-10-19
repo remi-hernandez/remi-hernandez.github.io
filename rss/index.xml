@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 17 Oct 2017 15:17:17 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Oct 2017 15:51:49 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>
 <div class="paragraph">
 <p>tool to merge files with svn : <a href="http://meldmerge.org/" class="bare">http://meldmerge.org/</a></p>
@@ -59,7 +59,9 @@ text = msg.as_string()
 server.sendmail(fromaddr, toaddr, text)
 server.quit()</code></pre>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/07/18/Send-a-mail-on-gmail-via-python.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/07/18/Send-a-mail-on-gmail-via-python.html</guid><category><![CDATA[python]]></category><category><![CDATA[mail]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 18 Jul 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Vim tips and shortcuts]]></title><description><![CDATA[<div class="paragraph">
+</div>]]></description><link>https://remi-hernandez.github.io/2017/07/18/Send-a-mail-on-gmail-via-python.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/07/18/Send-a-mail-on-gmail-via-python.html</guid><category><![CDATA[python]]></category><category><![CDATA[mail]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 18 Jul 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Vim tips and shortcuts]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
 <p>Vim</p>
 </div>
 <div class="paragraph">
@@ -76,6 +78,20 @@ soluce : map &lt;F9&gt; &lt;plug&gt;NERDTreeToggle&lt;CR&gt;</p>
 <div class="paragraph">
 <p><a href="https://dougblack.io/words/a-good-vimrc.html" class="bare">https://dougblack.io/words/a-good-vimrc.html</a> | config
 liens op : <a href="http://vimcasts.org/" class="bare">http://vimcasts.org/</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_qt_creator_config">qt-creator config</h3>
+<div class="paragraph">
+<p>alt v, alt v : active / désactive fake vim
+dans options / editeur de texte / completion / active completion : manually avec ctrl espace comme ça la popup ne gène pas lors de petites modifs pour le echap (double echap, un pour la popup et un pour mode commande).</p>
+</div>
+<div class="paragraph">
+<p>ajouter dans fakeVim/command mapping : Run run
+image::http://github.com/remi-hernandez/remi-hernandez.github.io/images/screen_options_vim_qt.png
+dans le _vimrc (outils/options/fakeVim/lire .vimrc depuis&#8230;&#8203;)
+map qq :run&lt;CR&gt;</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -208,6 +224,7 @@ would use ctags and then just use :tag to jump to the definition and :pop to com
 :set pastetoggle=&lt;f5&gt;
 
 then try hitting the F5 key while in insert mode (or just :set paste).</pre>
+</div>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html</guid><category><![CDATA[vim]]></category><category><![CDATA[tips]]></category><category><![CDATA[shortcuts]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python unit tests]]></title><description><![CDATA[<div class="sect3">
 <h4 id="_why">Why ?</h4>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Oct 2017 16:07:50 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 19 Oct 2017 16:09:21 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>
 <div class="paragraph">
 <p>tool to merge files with svn : <a href="http://meldmerge.org/" class="bare">http://meldmerge.org/</a></p>
@@ -88,9 +88,13 @@ liens op : <a href="http://vimcasts.org/" class="bare">http://vimcasts.org/</a><
 dans options / editeur de texte / completion / active completion : manually avec ctrl espace comme ça la popup ne gène pas lors de petites modifs pour le echap (double echap, un pour la popup et un pour mode commande).</p>
 </div>
 <div class="paragraph">
-<p>ajouter dans fakeVim/command mapping : Run run
-image::http://github.com/remi-hernandez/remi-hernandez.github.io/images/screen_options_vim_qt.png[]
-dans le _vimrc (outils/options/fakeVim/lire .vimrc depuis&#8230;&#8203;)
+<p>ajouter dans fakeVim/command mapping : Run run</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://remi-hernandez.github.io/images/screen_options_vim_qt.png" alt="options screen" width="500" height="500"></span></p>
+</div>
+<div class="paragraph">
+<p>dans le _vimrc (outils/options/fakeVim/lire .vimrc depuis&#8230;&#8203;)
 map qq :run&lt;CR&gt;</p>
 </div>
 <div class="listingblock">

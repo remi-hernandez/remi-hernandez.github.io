@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1506072869513" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1506072869513" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1508858173788" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1508858173788" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2016/10/30/CC-tips.html" />
     <meta name="referrer" content="origin" />
@@ -308,6 +308,22 @@ osgEarth::Symbology::Geometry geom = osgEarth::Features::GeometryUtils::geometry
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_map_iterations">map iterations</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">QMap&lt;QString, QString&gt; myMap;
+
+for (auto map : myMap.toStdMap()) {
+	qDebug() &lt;&lt; "key : " &lt;&lt; map.first &lt;&lt; " value : " &lt;&lt; map.second;
+}
+
+for (auto mapKey : myMap.keys()) {
+	qDebug() &lt;&lt; "key : " &lt;&lt; mapKey &lt;&lt; " value : " &lt;&lt; myMap.value(mapKey);
+}</code></pre>
+</div>
+</div>
+</div>
         </section>
 
     </article>
@@ -336,7 +352,7 @@ osgEarth::Symbology::Geometry geom = osgEarth::Features::GeometryUtils::geometry
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1506072869513"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1508858173788"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

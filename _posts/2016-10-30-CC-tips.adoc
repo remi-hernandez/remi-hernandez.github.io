@@ -215,3 +215,18 @@ osgEarth::Symbology::Geometry geom = osgEarth::Features::GeometryUtils::geometry
 
 ----
 
+=== map iterations
+[source, cpp]
+----
+QMap<QString, QString> myMap;
+
+for (auto map : myMap.toStdMap()) {
+	qDebug() << "key : " << map.first << " value : " << map.second;
+}
+
+for (auto mapKey : myMap.keys()) {
+	qDebug() << "key : " << mapKey << " value : " << myMap.value(mapKey);
+}
+----
+
+

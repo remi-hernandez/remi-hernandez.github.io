@@ -1,30 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 27 Oct 2017 19:44:34 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Go lang memo]]></title><description><![CDATA[<div class="paragraph">
-<p>Eg of basic program</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-go" data-lang="go">package main
-
-import "fmt"
-/*import (
-	"fmt"
-    "math"
-)*/
-
-func add(x int, y int) int {
-	return (x + y)
-}
-
-func multipl(a int, b int) int {
-	return (a*b)
-}
-
-func main() {
-	fmt.Println(add(42, 13))
-	fmt.Println(multipl(64, 96))
-}</code></pre>
-</div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Go-lang-memo.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Go-lang-memo.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 09 Nov 2017 11:42:19 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>
 <div class="paragraph">
 <p>tool to merge files with svn : <a href="http://meldmerge.org/" class="bare">http://meldmerge.org/</a></p>
@@ -209,10 +183,17 @@ commandes :
 :set list                 - affiche les espaces avec des $
 :set nolist
 :edit seul ou :edit!      - reload un fichier (ex : modifié ailleurs) et ! sans tenir compte des modifs (:vsp ou :sp pour avoir les 2 fichiers :3)
-:diffthis                 - passe en mode diff sur le fichier
-:diffoff
 :set paste                - passe en mode paste
 
+diff commands
+:diffthis                 - passe en mode diff sur le fichier
+:diffoff
+dp diffput:             puts changes under the cursor into the other file
+                        making them identical (thus removing the diff).
+do  diffget:            (o =&gt; obtain). The change under the cursor is replaced
+                        by the content of the other file making them identical.
+]c                      Jump to the next diff
+[c
 
 tabs :
 :tabedit {file}   edit specified file in a new tab
@@ -402,7 +383,7 @@ FAILED (failures=1)</pre>
 <p>Url to the doc : <a href="https://docs.python.org/3/library/unittest.html#test-cases" class="bare">docs.python.org/3/library/unittest.html#test-cases</a></p>
 </div>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</guid><category><![CDATA[python]]></category><category><![CDATA[unit tests]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python regex]]></title><description><![CDATA[<div class="sect3">
+</div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</guid><category><![CDATA[python]]></category><category><![CDATA[ unit tests]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python regex]]></title><description><![CDATA[<div class="sect3">
 <h4 id="_sub">sub()</h4>
 <div class="paragraph">
 <p>Change a value by another with sub.
@@ -1037,4 +1018,4 @@ res = [x for x in a if x not in set(b)]
 # now res is : [1, 2, 3]</code></pre>
 </div>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2016/10/06/Python-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2016/10/06/Python-tips.html</guid><category><![CDATA[python]]></category><category><![CDATA[tips]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Thu, 06 Oct 2016 00:00:00 GMT</pubDate></item></channel></rss>
+</div>]]></description><link>https://remi-hernandez.github.io/2016/10/06/Python-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2016/10/06/Python-tips.html</guid><category><![CDATA[python]]></category><category><![CDATA[ tips]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Thu, 06 Oct 2016 00:00:00 GMT</pubDate></item></channel></rss>

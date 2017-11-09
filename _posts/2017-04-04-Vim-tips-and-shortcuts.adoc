@@ -110,10 +110,17 @@ commandes :
 :set list                 - affiche les espaces avec des $
 :set nolist 
 :edit seul ou :edit!      - reload un fichier (ex : modifié ailleurs) et ! sans tenir compte des modifs (:vsp ou :sp pour avoir les 2 fichiers :3)
-:diffthis                 - passe en mode diff sur le fichier
-:diffoff 
 :set paste                - passe en mode paste
 
+diff commands
+:diffthis                 - passe en mode diff sur le fichier
+:diffoff 
+dp diffput:             puts changes under the cursor into the other file
+                        making them identical (thus removing the diff).
+do  diffget:            (o => obtain). The change under the cursor is replaced
+                        by the content of the other file making them identical.
+]c                      Jump to the next diff
+[c   
 
 tabs : 
 :tabedit {file}   edit specified file in a new tab

@@ -7,3 +7,8 @@
 === Meld
 
 tool to merge files with svn : http://meldmerge.org/
+
+
+=== Crash analyse on windows
+
+"observateur d'évènements" journaux windows, application, il y a un log assez détaillé sur les crash

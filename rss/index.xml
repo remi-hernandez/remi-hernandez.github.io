@@ -1,13 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 24 Nov 2017 10:19:28 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 02 Dec 2017 16:47:45 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<h3 id="_sizes">Sizes</h3>
+<div class="paragraph">
+<p>know the size of a folder</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">du -sh my_lib/movies # h for human and s for the folder only</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>know the disk usage</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">df -h</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_arborescence">Arborescence</h3>
+<div class="paragraph">
+<p>Display arborescence on 2 row</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">tree . -L 2</code></pre>
+</div>
+</div>
+</div>]]></description><link>https://remi-hernandez.github.io/2017/11/24/Cmd-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/11/24/Cmd-tips.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 24 Nov 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Go lang memo]]></title><description><![CDATA[<div class="paragraph">
+<p>Eg of basic program</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-go" data-lang="go">package main
+
+import "fmt"
+/*import (
+	"fmt"
+    "math"
+)*/
+
+func add(x int, y int) int {
+	return (x + y)
+}
+
+func multipl(a int, b int) int {
+	return (a*b)
+}
+
+func main() {
+	fmt.Println(add(42, 13))
+	fmt.Println(multipl(64, 96))
+}</code></pre>
+</div>
+</div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Go-lang-memo.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Go-lang-memo.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>
 <div class="paragraph">
 <p>tool to merge files with svn : <a href="http://meldmerge.org/" class="bare">http://meldmerge.org/</a></p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_crash_analyse_on_windows">Crash analyse on windows</h3>
 <div class="paragraph">
-<p>"observateur d'évènements" journaux windows, application, il y a un log assez détaillé sur les crash</p>
+<p>know the size of folders by treeview : <a href="https://www.jam-software.de/treesize_free/" class="bare">https://www.jam-software.de/treesize_free/</a></p>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2017/10/03/Tools-usefull-softwares.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/03/Tools-usefull-softwares.html</guid><category><![CDATA[tools]]></category><category><![CDATA[sowftware]]></category><category><![CDATA[utils]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 03 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[DB tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_what_s_here">What&#8217;s here ?</h3>
@@ -389,7 +441,7 @@ FAILED (failures=1)</pre>
 <p>Url to the doc : <a href="https://docs.python.org/3/library/unittest.html#test-cases" class="bare">docs.python.org/3/library/unittest.html#test-cases</a></p>
 </div>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</guid><category><![CDATA[python]]></category><category><![CDATA[ unit tests]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python regex]]></title><description><![CDATA[<div class="sect3">
+</div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-unit-tests.html</guid><category><![CDATA[python]]></category><category><![CDATA[unit tests]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python regex]]></title><description><![CDATA[<div class="sect3">
 <h4 id="_sub">sub()</h4>
 <div class="paragraph">
 <p>Change a value by another with sub.
@@ -1024,4 +1076,4 @@ res = [x for x in a if x not in set(b)]
 # now res is : [1, 2, 3]</code></pre>
 </div>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2016/10/06/Python-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2016/10/06/Python-tips.html</guid><category><![CDATA[python]]></category><category><![CDATA[ tips]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Thu, 06 Oct 2016 00:00:00 GMT</pubDate></item></channel></rss>
+</div>]]></description><link>https://remi-hernandez.github.io/2016/10/06/Python-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2016/10/06/Python-tips.html</guid><category><![CDATA[python]]></category><category><![CDATA[tips]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Thu, 06 Oct 2016 00:00:00 GMT</pubDate></item></channel></rss>

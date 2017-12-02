@@ -1,0 +1,28 @@
+= Cmd tips
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+:published_at: 2017-11-24
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+=== Sizes
+
+know the size of a folder 
+[source, shell]
+----
+du -sh my_lib/movies # h for human and s for the folder only
+----
+
+know the disk usage 
+[source, shell]
+----
+df -h
+----
+
+=== Arborescence
+
+Display arborescence on 2 row
+[source, shell]
+----
+tree . -L 2
+----

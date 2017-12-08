@@ -178,4 +178,44 @@ res = [x for x in a if x not in set(b)]
 # now res is : [1, 2, 3]
 ----
 
+==== How to check the method existing in a python object
+
+[source, python]
+----
+[method_name for method_name in dir(object)
+ if callable(getattr(object, method_name))]
+----
+
+==== Format text
+
+[source, python]
+----
+
+>>> s = "hello world"
+>>> s.center(40)
+>>> '              hello world               '
+
+>>> '{:*^50}'.format('sample text')
+'*******************sample text********************'     # * is the fill character.
+
+>>> '{:^50}'.format('sample text')
+'                   sample text                    '     # with a length of 50.
+
+>>> x = 13.949999999999999999
+>>> x
+13.95
+>>> g = float("{0:.2f}".format(x))
+>>> g
+13.95
+>>> x == g
+True
+>>> h = round(x, 2)
+>>> h
+13.95
+>>> x == h
+True
+----
+
+
+
 

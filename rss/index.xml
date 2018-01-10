@@ -1,30 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 20 Dec 2017 14:14:33 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Go lang memo]]></title><description><![CDATA[<div class="paragraph">
-<p>Eg of basic program</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 10 Jan 2018 15:01:48 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<h3 id="_sizes">Sizes</h3>
+<div class="paragraph">
+<p>know the size of a folder</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-go" data-lang="go">package main
-
-import "fmt"
-/*import (
-	"fmt"
-    "math"
-)*/
-
-func add(x int, y int) int {
-	return (x + y)
-}
-
-func multipl(a int, b int) int {
-	return (a*b)
-}
-
-func main() {
-	fmt.Println(add(42, 13))
-	fmt.Println(multipl(64, 96))
-}</code></pre>
+<pre class="highlight"><code class="language-shell" data-lang="shell">du -sh my_lib/movies # h for human and s for the folder only</code></pre>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Go-lang-memo.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Go-lang-memo.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+</div>
+<div class="paragraph">
+<p>know the disk usage</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">df -h</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_arborescence">Arborescence</h3>
+<div class="paragraph">
+<p>Display arborescence on 2 row</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">tree . -L 2</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_text_play">Text play</h3>
+<div class="paragraph">
+<p>Substring text</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">path="/tyt/tit/tat"
+lawl=${path##*/}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remove_files_except">Remove files except</h3>
+<div class="paragraph">
+<p>works on bash only :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py</code></pre>
+</div>
+</div>
+</div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</guid><category><![CDATA[bash]]></category><category><![CDATA[commands]]></category><category><![CDATA[tips]]></category><category><![CDATA[unix]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>
 <div class="paragraph">
 <p>tool to merge files with svn : <a href="http://meldmerge.org/" class="bare">http://meldmerge.org/</a></p>

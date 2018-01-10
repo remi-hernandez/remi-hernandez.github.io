@@ -1,32 +1,53 @@
-= Go lang memo
-// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+= Cmd tips
+
 // :hp-image: /covers/cover.png
-:published_at: 2017-10-27
+:hp-tags: bash, commands, tips, unix
 // :hp-tags: HubPress, Blog, Open_Source,
 // :hp-alt-title: My English Title
 
-Eg of basic program
+=== Sizes
 
-[source, go]
+know the size of a folder 
+[source, shell]
 ----
-package main
-
-import "fmt"
-/*import (
-	"fmt"
-    "math"
-)*/
-
-func add(x int, y int) int {
-	return (x + y)
-}
-
-func multipl(a int, b int) int {
-	return (a*b)
-}
-
-func main() {
-	fmt.Println(add(42, 13))
-	fmt.Println(multipl(64, 96))
-}
+du -sh my_lib/movies # h for human and s for the folder only
 ----
+
+know the disk usage 
+[source, shell]
+----
+df -h
+----
+
+=== Arborescence
+
+Display arborescence on 2 row
+[source, shell]
+----
+tree . -L 2
+----
+
+=== Text play
+
+Substring text
+
+[source, shell]
+----
+path="/tyt/tit/tat"
+lawl=${path##*/}
+----
+
+=== Remove files except
+
+works on bash only : 
+
+[source, shell]
+----
+$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+----
+

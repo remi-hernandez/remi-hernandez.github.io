@@ -58,3 +58,6 @@ move docker (var/lib) : https://linuxconfig.org/how-to-move-docker-s-default-var
 https://hub.docker.com/r/linuxserver/plex/
 
 https://www.htpcbeginner.com/install-plex-using-docker/
+
+ssh tunnel plex : 
+https://plaza.quickbox.io/t/setting-up-an-ssh-tunnel-for-plex/135

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Jan 2018 15:50:45 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Jan 2018 16:08:55 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_sizes">Sizes</h3>
 <div class="paragraph">
 <p>know the size of a folder</p>
@@ -63,6 +63,9 @@ ta.py  toto.py</code></pre>
 </div>
 <div class="paragraph">
 <p><a href="https://hub.docker.com/r/linuxserver/plex/" class="bare">https://hub.docker.com/r/linuxserver/plex/</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.htpcbeginner.com/install-plex-using-docker/" class="bare">https://www.htpcbeginner.com/install-plex-using-docker/</a></p>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</guid><category><![CDATA[bash]]></category><category><![CDATA[commands]]></category><category><![CDATA[tips]]></category><category><![CDATA[unix]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_meld">Meld</h3>

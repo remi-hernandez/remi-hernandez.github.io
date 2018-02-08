@@ -51,3 +51,15 @@ $ ls
 ta.py  toto.py
 ----
 
+
+=== Tensorflow
+
+this command will launch a bash in tensorflow container with all the scripts located in /home/superuserofthedeath/Documents/scripts/ into /notebooks : 
+
+)❯ sudo docker run --rm -it -v /home/superuserofthedeath/Documents/scripts/:/notebooks -p 8888:8888 tensorflow/tensorflow /bin/bash
+
+run without --rm and with --name tf to keep datas
+sudo docker start tf # will run the container
+sudo docker attach tf # will attach to the docker terminal
+
+

@@ -124,6 +124,8 @@ do  diffget:            (o => obtain). The change under the cursor is replaced
 
 ajouter des ' autour d'un mot (tata devient 'tata') : se mettre au début du mot <esc>ysiw' possibilité de répéter l'action sur un autre mot en se mettant sur le mot suivant et en faisant .
 
+:earlier 2m              - revient en arriere de 2min
+
 tabs : 
 :tabedit {file}   edit specified file in a new tab
 :tabfind {file}   open a new tab with filename given, searching the 'path' to find it

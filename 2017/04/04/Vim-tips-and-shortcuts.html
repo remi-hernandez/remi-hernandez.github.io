@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1510227739261" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1510227739261" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1518265138067" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1518265138067" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html" />
     <meta name="referrer" content="origin" />
@@ -76,7 +76,7 @@
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">Vim tips and shortcuts</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1491256800" datetime="2017-04-04T00:00" title="04 April 2017">7 months ago</time></span>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1491256800" datetime="2017-04-04T00:00" title="04 April 2017">10 months ago</time></span>
             <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="https://remi-hernandez.github.io/tag/vim/">vim</a>, <a href="https://remi-hernandez.github.io/tag/tips/">tips</a>, <a href="https://remi-hernandez.github.io/tag/shortcuts/">shortcuts</a></span>
             <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="https://remi-hernandez.github.io/author/remi-hernandez/">Remi Hernandez</a></span></span>
     </section>
@@ -221,6 +221,8 @@ do  diffget:            (o =&gt; obtain). The change under the cursor is replace
 ]c                      Jump to the next diff
 [c
 
+ajouter des ' autour d'un mot (tata devient 'tata') : se mettre au début du mot &lt;esc&gt;ysiw' possibilité de répéter l'action sur un autre mot en se mettant sur le mot suivant et en faisant .
+
 tabs :
 :tabedit {file}   edit specified file in a new tab
 :tabfind {file}   open a new tab with filename given, searching the 'path' to find it
@@ -248,6 +250,11 @@ colorscheme gruvbox
 nnoremap q a"&lt;Esc&gt; -&gt; permet d'avoir la double quote
 nnoremap Q i"&lt;Esc&gt;
 set path+= **
+
+color gruvbox
+set background=dark
+execute "set &lt;M-0&gt;=\e0"
+map &lt;M-0&gt; &lt;plug&gt;NERDTreeTabsToggle&lt;CR&gt;
 
 
 Next tab: gt
@@ -296,7 +303,7 @@ then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1510227739261"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1518265138067"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

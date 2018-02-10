@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 30 Jan 2018 17:12:41 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Feb 2018 12:18:58 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_sizes">Sizes</h3>
 <div class="paragraph">
 <p>know the size of a folder</p>
@@ -274,6 +274,8 @@ do  diffget:            (o =&gt; obtain). The change under the cursor is replace
 ]c                      Jump to the next diff
 [c
 
+ajouter des ' autour d'un mot (tata devient 'tata') : se mettre au début du mot &lt;esc&gt;ysiw' possibilité de répéter l'action sur un autre mot en se mettant sur le mot suivant et en faisant .
+
 tabs :
 :tabedit {file}   edit specified file in a new tab
 :tabfind {file}   open a new tab with filename given, searching the 'path' to find it
@@ -301,6 +303,11 @@ colorscheme gruvbox
 nnoremap q a"&lt;Esc&gt; -&gt; permet d'avoir la double quote
 nnoremap Q i"&lt;Esc&gt;
 set path+= **
+
+color gruvbox
+set background=dark
+execute "set &lt;M-0&gt;=\e0"
+map &lt;M-0&gt; &lt;plug&gt;NERDTreeTabsToggle&lt;CR&gt;
 
 
 Next tab: gt

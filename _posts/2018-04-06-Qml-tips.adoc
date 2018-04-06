@@ -5,7 +5,7 @@
 :hp-tags: Qt, Qml
 // :hp-alt-title: My English Title
 
-In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son's position management will be broken.
+In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don't have to put anchors to one of the sons, if you do this the son's position management will be broken.
 
 In this example the rectangle B is used to do a background but the right solution is to put this rectangle at the root, as a parent of the RowLayout.
 

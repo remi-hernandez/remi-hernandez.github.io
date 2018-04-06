@@ -7,3 +7,25 @@
 
 In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son's position management will be broken.
 
+In this example the rectangle B is used to do a background but the right solution is to put this rectangle at the root, as a parent of the RowLayout.
+
+[source,javascript]
+----
+RowLayout {
+ 	id: A
+    Rectangle {
+    	id: B
+        anchors.fill: parent // don't do this !
+        color: "red"
+    }
+    
+    Rectangle {
+    	id: BB
+    }
+    
+    Rectangle {
+    	id: BBB
+    }
+}
+
+----

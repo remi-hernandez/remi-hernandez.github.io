@@ -4,3 +4,6 @@
 // :published_at: 2019-01-31
 // :hp-tags: HubPress, Blog, Open_Source,
 // :hp-alt-title: My English Title
+
+In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son's position management will be broken.
+

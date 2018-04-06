@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1523005163462" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1523005163462" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1523007811182" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1523007811182" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2018/04/06/Qml-tips.html" />
     <meta name="referrer" content="origin" />
@@ -20,7 +20,7 @@
     <meta property="og:site_name" content="Pipou&#x27;s world" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Qml tips" />
-    <meta property="og:description" content="In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son&amp;#8217;s position management will be broken. In this example the rectangle B is used to do a background but the right solution is to put this rectangle" />
+    <meta property="og:description" content="In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&amp;#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&amp;#8217;s position management will be broken. In this example the" />
     <meta property="og:url" content="https://remi-hernandez.github.io/2018/04/06/Qml-tips.html" />
     <meta property="article:published_time" content="2018-04-06T00:00:00.000Z" />
     <meta property="article:tag" content="Qt" />
@@ -28,7 +28,7 @@
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Qml tips" />
-    <meta name="twitter:description" content="In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son&amp;#8217;s position management will be broken. In this example the rectangle B is used to do a background but the right solution is to put this rectangle" />
+    <meta name="twitter:description" content="In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&amp;#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&amp;#8217;s position management will be broken. In this example the" />
     <meta name="twitter:url" content="https://remi-hernandez.github.io/2018/04/06/Qml-tips.html" />
     
     <script type="application/ld+json">
@@ -47,7 +47,7 @@
     "url": "https://remi-hernandez.github.io/2018/04/06/Qml-tips.html",
     "datePublished": "2018-04-06T00:00:00.000Z",
     "keywords": "Qt, Qml",
-    "description": "In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son&amp;#8217;s position management will be broken. In this example the rectangle B is used to do a background but the right solution is to put this rectangle"
+    "description": "In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&amp;#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&amp;#8217;s position management will be broken. In this example the"
 }
     </script>
 
@@ -72,7 +72,7 @@
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">Qml tips</h1>
-        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1522965600" datetime="2018-04-06T00:00" title="06 April 2018">11 hours ago</time></span>
+        <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="1522965600" datetime="2018-04-06T00:00" title="06 April 2018">12 hours ago</time></span>
             <span class="tags animated fadeInUp"><i class="fa fa-tags"></i> <a href="https://remi-hernandez.github.io/tag/Qt/">Qt</a>, <a href="https://remi-hernandez.github.io/tag/Qml/">Qml</a></span>
             <span class="author animated fadeInUp"><i class="fa fa-user"></i> <a href="https://remi-hernandez.github.io/author/remi-hernandez/">Remi Hernandez</a></span></span>
     </section>
@@ -82,10 +82,10 @@
     <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-Qt tag-Qml">
         <section class="post-content">
             <div class="paragraph">
-<p>In an item (A) which handle the position of his sons (B) (e.g.: a RowLayout), if you do this the son&#8217;s position management will be broken.</p>
+<p>In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&#8217;s position management will be broken.</p>
 </div>
 <div class="paragraph">
-<p>In this example the rectangle B is used to do a background but the right solution is to put this rectangle at the root, as a parent of the RowLayout.</p>
+<p>In this example the rectangle B is used to do a background which is wrong, the right solution is to put this rectangle at the root, as a parent of the RowLayout.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -135,7 +135,7 @@
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1523005163462"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1523007811182"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

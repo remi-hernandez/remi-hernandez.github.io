@@ -1,29 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 06 Apr 2018 09:43:31 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Qml tips]]></title><description><![CDATA[<div class="paragraph">
-<p>In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&#8217;s position management will be broken.</p>
-</div>
-<div class="paragraph">
-<p>In this example the rectangle B is used to do a background which is wrong, the right solution is to put this rectangle at the root, as a parent of the RowLayout.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-javascript" data-lang="javascript">RowLayout {
- 	id: A
-    Rectangle {
-    	id: B
-        anchors.fill: parent // don't do this !
-        color: "red"
-    }
-
-    Rectangle {
-    	id: BB
-    }
-
-    Rectangle {
-    	id: BBB
-    }
-}</code></pre>
-</div>
-</div>]]></description><link>https://remi-hernandez.github.io/2018/04/06/Qml-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/04/06/Qml-tips.html</guid><category><![CDATA[Qt]]></category><category><![CDATA[Qml]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 06 Apr 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 03 May 2018 18:29:48 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_sizes">Sizes</h3>
 <div class="paragraph">
 <p>know the size of a folder</p>
@@ -353,6 +328,26 @@ would use ctags and then just use :tag to jump to the definition and :pop to com
 
 then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ctags">Ctags</h3>
+<div class="paragraph">
+<p>first run <code>ctags -R *</code> in the root directory and then you can :</p>
+</div>
+<div class="paragraph">
+<p>Ctrl+] - go to definition
+Ctrl+T - Jump back from the definition.
+Ctrl+W Ctrl+] - Open the definition in a horizontal split</p>
+</div>
+<div class="paragraph">
+<p>Add these lines in vimrc
+map &lt;C-\&gt; :tab split&lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;
+map &lt;A-]&gt; :vsp &lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
+</div>
+<div class="paragraph">
+<p>Ctrl+\ - Open the definition in a new tab
+Alt+] - Open the definition in a vertical split</p>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html</guid><category><![CDATA[vim]]></category><category><![CDATA[tips]]></category><category><![CDATA[shortcuts]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Python unit tests]]></title><description><![CDATA[<div class="sect3">
 <h4 id="_why">Why ?</h4>

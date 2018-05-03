@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 03 May 2018 18:31:49 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 03 May 2018 19:11:42 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_sizes">Sizes</h3>
 <div class="paragraph">
 <p>know the size of a folder</p>
@@ -337,14 +337,22 @@ then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 <p>first run <code>ctags -R *</code> in the root directory and then you can :</p>
 </div>
 <div class="paragraph">
-<p>Ctrl+] - go to definition
-Ctrl+T - Jump back from the definition.
-Ctrl+W Ctrl+] - Open the definition in a horizontal split</p>
+<p>Ctrl+] - go to definition</p>
 </div>
 <div class="paragraph">
-<p>Add these lines in vimrc
-map &lt;C-\&gt; :tab split&lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;
-map &lt;A-]&gt; :vsp &lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
+<p>Ctrl+T - Jump back from the definition.</p>
+</div>
+<div class="paragraph">
+<p>Ctrl+W Ctrl+] - Open the definition in a horizontal split</p>
+</div>
+<div class="paragraph">
+<p>Add these lines in vimrc :</p>
+</div>
+<div class="paragraph">
+<p>map &lt;C-\&gt; :tab split&lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
+</div>
+<div class="paragraph">
+<p>map &lt;A-]&gt; :vsp &lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
 </div>
 <div class="paragraph">
 <p>Ctrl+\ - Open the definition in a new tab

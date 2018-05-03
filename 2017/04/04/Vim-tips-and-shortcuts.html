@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1525372309070" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1525372309070" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1525374702276" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1525374702276" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2017/04/04/Vim-tips-and-shortcuts.html" />
     <meta name="referrer" content="origin" />
@@ -284,14 +284,22 @@ then try hitting the F5 key while in insert mode (or just :set paste).</pre>
 <p>first run <code>ctags -R *</code> in the root directory and then you can :</p>
 </div>
 <div class="paragraph">
-<p>Ctrl+] - go to definition
-Ctrl+T - Jump back from the definition.
-Ctrl+W Ctrl+] - Open the definition in a horizontal split</p>
+<p>Ctrl+] - go to definition</p>
 </div>
 <div class="paragraph">
-<p>Add these lines in vimrc
-map &lt;C-\&gt; :tab split&lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;
-map &lt;A-]&gt; :vsp &lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
+<p>Ctrl+T - Jump back from the definition.</p>
+</div>
+<div class="paragraph">
+<p>Ctrl+W Ctrl+] - Open the definition in a horizontal split</p>
+</div>
+<div class="paragraph">
+<p>Add these lines in vimrc :</p>
+</div>
+<div class="paragraph">
+<p>map &lt;C-\&gt; :tab split&lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
+</div>
+<div class="paragraph">
+<p>map &lt;A-]&gt; :vsp &lt;CR&gt;:exec("tag ".expand("&lt;cword&gt;"))&lt;CR&gt;</p>
 </div>
 <div class="paragraph">
 <p>Ctrl+\ - Open the definition in a new tab
@@ -326,7 +334,7 @@ Alt+] - Open the definition in a vertical split</p>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1525372309070"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1525374702276"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

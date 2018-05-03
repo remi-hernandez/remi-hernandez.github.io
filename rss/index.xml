@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 03 May 2018 18:29:48 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 03 May 2018 18:31:49 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Cmd tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_sizes">Sizes</h3>
 <div class="paragraph">
 <p>know the size of a folder</p>
@@ -231,6 +231,7 @@ ctrl+g     - cherche le pattern courant
 ctrl+n     - autocompletion (et ctrl+p pour aller en arrière)
 ctrl+x, ctrl+f - défini l'autocompletion sur les fichiers (path)
       -&gt; /lictrlx, ctrlf bababa / ctrlx, ctrlf etc
+1ctrl+g    - affiche le filepath du fichier actuel
 
 zf         - crée un fold sur la sélection (selectionne les lignes en visual avant)
 zo         - open fold

@@ -61,6 +61,7 @@ gvy        - copie la dernière sélection
 mk         - mark current position
 'k         - move to mark k
 d'k        - delete from current position to mark k
+f          - f suivi d'une lettre ex : ft va positionner le curseur sur la lettre t suivante dans la ligne, idem mais précédente avec F
 J          - Join la ligne suivante à la fin de la courante
 R          - passe en mode replace 
 V          - mode visual : sélectionne la ligne courante
@@ -79,7 +80,6 @@ ctrl+g     - cherche le pattern courant
 ctrl+n     - autocompletion (et ctrl+p pour aller en arrière)
 ctrl+x, ctrl+f - défini l'autocompletion sur les fichiers (path)
       -> /lictrlx, ctrlf bababa / ctrlx, ctrlf etc
-1ctrl+g    - affiche le filepath du fichier actuel
 
 zf         - crée un fold sur la sélection (selectionne les lignes en visual avant)
 zo         - open fold 
@@ -177,25 +177,3 @@ would use ctags and then just use :tag to jump to the definition and :pop to com
 
 then try hitting the F5 key while in insert mode (or just :set paste). 
 ----
-
-
-=== Ctags
-
-first run `ctags -R *` in the root directory and then you can :
-
-Ctrl+] - go to definition
-
-Ctrl+T - Jump back from the definition.
-
-Ctrl+W Ctrl+] - Open the definition in a horizontal split
-
-Add these lines in vimrc : 
-
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
-Ctrl+\ - Open the definition in a new tab
-Alt+] - Open the definition in a vertical split
-
-

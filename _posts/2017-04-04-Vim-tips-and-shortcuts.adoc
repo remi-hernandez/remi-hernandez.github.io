@@ -81,6 +81,14 @@ ctrl+n     - autocompletion (et ctrl+p pour aller en arrière)
 ctrl+x, ctrl+f - défini l'autocompletion sur les fichiers (path)
       -> /lictrlx, ctrlf bababa / ctrlx, ctrlf etc
 
+cw 	       - change to next word
+cc         - change entire line
+ce         - change from cursor to end of word
+c$         - change to end of line
+ci”        - change inside double quotes
+ca”        - change around double quotes
+cfx        - change until next found occurrence of x
+
 zf         - crée un fold sur la sélection (selectionne les lignes en visual avant)
 zo         - open fold 
 zc         - close fold

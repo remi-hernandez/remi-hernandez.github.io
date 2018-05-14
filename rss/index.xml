@@ -1,5 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 May 2018 13:50:20 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div class="paragraph">
-<p>SPC f e d       - edit spacemacs dotfile</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 14 May 2018 15:22:48 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>SPC f e d       - edit spacemacs dotfile
+SPC h [x]       - help on [x]</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_org_mode">Org mode</h3>
+<div class="paragraph">
+<p>SPC m e         - export file</p>
+</div>
 </div>]]></description><link>https://remi-hernandez.github.io/2018/05/14/Spacemacs.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/05/14/Spacemacs.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Mon, 14 May 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Qml tips]]></title><description><![CDATA[<div class="paragraph">
 <p>In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&#8217;s position management will be broken.</p>
 </div>

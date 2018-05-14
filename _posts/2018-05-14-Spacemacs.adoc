@@ -7,3 +7,8 @@
 
 
 SPC f e d       - edit spacemacs dotfile
+SPC h [x]       - help on [x]
+
+=== Org mode
+
+SPC m e         - export file

@@ -10,6 +10,10 @@ SPC f e d       - edit spacemacs dotfile
 SPC f e R       - reload spacemacs config
 SPC h [x]       - help on [x]
 
+=== Package
+
+SPC SPC package-install 
+
 === Org mode
 
 SPC m e         - export file

@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1526387894867" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1526387894867" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1526388118785" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1526388118785" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2018/05/14/Spacemacs.html" />
     <meta name="referrer" content="origin" />
@@ -20,12 +20,12 @@
     <meta property="og:site_name" content="Pipou&#x27;s world" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Spacemacs" />
-    <meta property="og:description" content="SPC f e d       - edit spacemacs dotfile SPC f e R       - reload spacemacs config SPC h [x]       - help on [x] Package SPC SPC package-install Org mode SPC m e         - export file SPC bb - display buffer list" />
+    <meta property="og:description" content="#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr); int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use" />
     <meta property="og:url" content="https://remi-hernandez.github.io/2018/05/14/Spacemacs.html" />
     <meta property="article:published_time" content="2018-05-14T00:00:00.000Z" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Spacemacs" />
-    <meta name="twitter:description" content="SPC f e d       - edit spacemacs dotfile SPC f e R       - reload spacemacs config SPC h [x]       - help on [x] Package SPC SPC package-install Org mode SPC m e         - export file SPC bb - display buffer list" />
+    <meta name="twitter:description" content="#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr); int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use" />
     <meta name="twitter:url" content="https://remi-hernandez.github.io/2018/05/14/Spacemacs.html" />
     
     <script type="application/ld+json">
@@ -43,7 +43,7 @@
     "headline": "Spacemacs",
     "url": "https://remi-hernandez.github.io/2018/05/14/Spacemacs.html",
     "datePublished": "2018-05-14T00:00:00.000Z",
-    "description": "SPC f e d       - edit spacemacs dotfile SPC f e R       - reload spacemacs config SPC h [x]       - help on [x] Package SPC SPC package-install Org mode SPC m e         - export file SPC bb - display buffer list"
+    "description": "#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr); int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use"
 }
     </script>
 
@@ -77,29 +77,235 @@
 <main id="main" class="content">
     <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post">
         <section class="post-content">
-            <div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>SPC f e d       - edit spacemacs dotfile
-SPC f e R       - reload spacemacs config
-SPC h [x]       - help on [x]</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_package">Package</h3>
-<div class="paragraph">
-<p>SPC SPC package-install</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_org_mode">Org mode</h3>
-<div class="paragraph">
-<p>SPC m e         - export file</p>
+            <div class="paragraph">
+<p>#+TITLE: This is spacemacs title</p>
 </div>
 <div class="paragraph">
-<p>SPC bb - display buffer list</p>
+<p>#+OPTIONS: toc:nil</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Org</p>
+<div class="ulist">
+<ul>
+<li>
+<p>categories</p>
+<div class="literalblock">
+<div class="content">
+<pre>#+BEGIN_SRC c++
+void process_stuff(my_super_class* ptr);</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>int a = 2;
+#+END_SRC</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#+BEGIN_SRC python
+  def example(a, b):
+     """
+     in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
+     use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
+     """
+     print ("will process {} + {}".format(a, b))
+     return (a,b)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  example(2, 18)
+#+END_SRC</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Commands
+| command        | action                                           |
+|----------------+--------------------------------------------------|
+| shift tab      | changes  fold                                    |
+| ctrlc and wait | all the commands with description will displayed |
+| ctrlc ctrle    | export file                                      |
+| ctrlc ctrlc    | compute part                                     |
+| ctrlc ctrlt    | cycle through TODO states                        |
+| ctrlc ctrld    | add a deadline to a TODO element                 |
+| ctrlc ctrls    | append a datetime                                |</p>
+</li>
+<li>
+<p>SPC commands
+spc mee    - export in different kind of files</p>
+</li>
+<li>
+<p>Todo &amp; cie</p>
+<div class="ulist">
+<ul>
+<li>
+<p>TODO todo example
+DEADLINE: &lt;2018-04-20 Fri&gt;
+at the end of the title line (after example here) hit shift alt enter
+to go to the next line with another todo
+use ctrlc ctrld to add a deadline do a todo element</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>under task one.</p>
+</li>
+<li>
+<p>[ ] under task two.</p>
+</li>
+<li>
+<p>[ ]</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>DONE clycle through states
+CLOSED: [2018-05-15 Tue 13:16]
+use ctrlc ctrlt tou cylcle through states</p>
+</li>
+<li>
+<p>use list [1/2]
+use ctrlc ctrlc on one line to set or unset the state</p>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-square-o"></i> task one</p>
+</li>
+<li>
+<p>[X] task two</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>use other list [50%]</p>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-square-o"></i> item one</p>
+</li>
+<li>
+<p>[X] item two</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Schedules
+SCHEDULED: &lt;2018-05-15 Tue&gt;
+use ctrlc ctrls to append a datetime
+move cursor on the datetime and use shift left / right to change the value</p>
+</li>
+<li>
+<p>commands (spc spc my_super_command)
+org-md-export-to-markdown     - export to a text file with markdown syntax (my_file.md)</p>
+</li>
+<li>
+<p>LaTex integration</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Characters: \alpha \rightarrow \beta</p>
+</li>
+<li>
+<p>$O(n \log n)$</p>
+<div class="literalblock">
+<div class="content">
+<pre>\begin{align*}
+  3 * 2 + 1 &amp;= 6 + 1\\
+           &amp;= 7
+\end{align*}</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Spc commands</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Spacemacs config
+spc fed  - edit spacemacs dotfile
+spc feR  - reload spacemacs config</p>
+</li>
+<li>
+<p>toogle
+spc tn    - toogle line number</p>
+</li>
+<li>
+<p>UI toogles
+spc TF    - toogle fullscreen mode</p>
+</li>
+<li>
+<p>file
+spc ft    - toogle neotree
+spc ff    - open file</p>
+</li>
+<li>
+<p>project
+Create en empty file named .projectile in your project root directory</p>
+<div class="literalblock">
+<div class="content">
+<pre>spc pp    - switch project
+spc pf    - find a file in your project
+spc /     - find text in project</pre>
+</div>
+</div>
+</li>
+<li>
+<p>buffer
+spc tab   - last buffer
+spc bn    - next buffer
+spc bb    - show the list of current buffers
+spc bd    - delete buffer</p>
+</li>
+<li>
+<p>window
+spc wS    - split windows vertical
+spc nb of window - switch to &lt;number of window&gt;
+spc wc    - close a window</p>
+</li>
+<li>
+<p>git
+spc gs    - git statu</p>
+</li>
+<li>
+<p>shell
+spc '     - toogle the little shell</p>
+</li>
+<li>
+<p>others
+spc h[x]  - help on [x]
+spc zX    - increase decrease font size</p>
+</li>
+<li>
+<p>: commands
+:shell    - start a shell in a buffer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Packages</p>
+<div class="literalblock">
+<div class="content">
+<pre>spc spc package-install to install a package</pre>
+</div>
+</div>
+</li>
+</ul>
 </div>
         </section>
 
@@ -129,7 +335,7 @@ SPC h [x]       - help on [x]</p>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1526387894867"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1526388118785"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

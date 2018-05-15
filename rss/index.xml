@@ -1,26 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 May 2018 12:38:14 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div id="preamble">
-<div class="sectionbody">
-<div class="paragraph">
-<p>SPC f e d       - edit spacemacs dotfile
-SPC f e R       - reload spacemacs config
-SPC h [x]       - help on [x]</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_package">Package</h3>
-<div class="paragraph">
-<p>SPC SPC package-install</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_org_mode">Org mode</h3>
-<div class="paragraph">
-<p>SPC m e         - export file</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 May 2018 12:41:58 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div class="paragraph">
+<p>#+TITLE: This is spacemacs title</p>
 </div>
 <div class="paragraph">
-<p>SPC bb - display buffer list</p>
+<p>#+OPTIONS: toc:nil</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>Org</p>
+<div class="ulist">
+<ul>
+<li>
+<p>categories</p>
+<div class="literalblock">
+<div class="content">
+<pre>#+BEGIN_SRC c++
+void process_stuff(my_super_class* ptr);</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>int a = 2;
+#+END_SRC</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>#+BEGIN_SRC python
+  def example(a, b):
+     """
+     in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
+     use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
+     """
+     print ("will process {} + {}".format(a, b))
+     return (a,b)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  example(2, 18)
+#+END_SRC</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Commands
+| command        | action                                           |
+|----------------+--------------------------------------------------|
+| shift tab      | changes  fold                                    |
+| ctrlc and wait | all the commands with description will displayed |
+| ctrlc ctrle    | export file                                      |
+| ctrlc ctrlc    | compute part                                     |
+| ctrlc ctrlt    | cycle through TODO states                        |
+| ctrlc ctrld    | add a deadline to a TODO element                 |
+| ctrlc ctrls    | append a datetime                                |</p>
+</li>
+<li>
+<p>SPC commands
+spc mee    - export in different kind of files</p>
+</li>
+<li>
+<p>Todo &amp; cie</p>
+<div class="ulist">
+<ul>
+<li>
+<p>TODO todo example
+DEADLINE: &lt;2018-04-20 Fri&gt;
+at the end of the title line (after example here) hit shift alt enter
+to go to the next line with another todo
+use ctrlc ctrld to add a deadline do a todo element</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>under task one.</p>
+</li>
+<li>
+<p>[ ] under task two.</p>
+</li>
+<li>
+<p>[ ]</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>DONE clycle through states
+CLOSED: [2018-05-15 Tue 13:16]
+use ctrlc ctrlt tou cylcle through states</p>
+</li>
+<li>
+<p>use list [1/2]
+use ctrlc ctrlc on one line to set or unset the state</p>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-square-o"></i> task one</p>
+</li>
+<li>
+<p>[X] task two</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>use other list [50%]</p>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-square-o"></i> item one</p>
+</li>
+<li>
+<p>[X] item two</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Schedules
+SCHEDULED: &lt;2018-05-15 Tue&gt;
+use ctrlc ctrls to append a datetime
+move cursor on the datetime and use shift left / right to change the value</p>
+</li>
+<li>
+<p>commands (spc spc my_super_command)
+org-md-export-to-markdown     - export to a text file with markdown syntax (my_file.md)</p>
+</li>
+<li>
+<p>LaTex integration</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Characters: \alpha \rightarrow \beta</p>
+</li>
+<li>
+<p>$O(n \log n)$</p>
+<div class="literalblock">
+<div class="content">
+<pre>\begin{align*}
+  3 * 2 + 1 &amp;= 6 + 1\\
+           &amp;= 7
+\end{align*}</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Spc commands</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Spacemacs config
+spc fed  - edit spacemacs dotfile
+spc feR  - reload spacemacs config</p>
+</li>
+<li>
+<p>toogle
+spc tn    - toogle line number</p>
+</li>
+<li>
+<p>UI toogles
+spc TF    - toogle fullscreen mode</p>
+</li>
+<li>
+<p>file
+spc ft    - toogle neotree
+spc ff    - open file</p>
+</li>
+<li>
+<p>project
+Create en empty file named .projectile in your project root directory</p>
+<div class="literalblock">
+<div class="content">
+<pre>spc pp    - switch project
+spc pf    - find a file in your project
+spc /     - find text in project</pre>
+</div>
+</div>
+</li>
+<li>
+<p>buffer
+spc tab   - last buffer
+spc bn    - next buffer
+spc bb    - show the list of current buffers
+spc bd    - delete buffer</p>
+</li>
+<li>
+<p>window
+spc wS    - split windows vertical
+spc nb of window - switch to &lt;number of window&gt;
+spc wc    - close a window</p>
+</li>
+<li>
+<p>git
+spc gs    - git statu</p>
+</li>
+<li>
+<p>shell
+spc '     - toogle the little shell</p>
+</li>
+<li>
+<p>others
+spc h[x]  - help on [x]
+spc zX    - increase decrease font size</p>
+</li>
+<li>
+<p>: commands
+:shell    - start a shell in a buffer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Packages</p>
+<div class="literalblock">
+<div class="content">
+<pre>spc spc package-install to install a package</pre>
+</div>
+</div>
+</li>
+</ul>
 </div>]]></description><link>https://remi-hernandez.github.io/2018/05/14/Spacemacs.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/05/14/Spacemacs.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Mon, 14 May 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Qml tips]]></title><description><![CDATA[<div class="paragraph">
 <p>In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&#8217;s position management will be broken.</p>
 </div>

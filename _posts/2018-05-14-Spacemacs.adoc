@@ -17,3 +17,5 @@ SPC SPC package-install
 === Org mode
 
 SPC m e         - export file
+
+SPC bb - display buffer list

@@ -10,12 +10,11 @@
 
 #+OPTIONS: toc:nil
 
-* Org 
-** categories
+= Org 
+== categories
 
    #+BEGIN_SRC c++
-   void process_stuff(my_super_class* ptr);
-   
+   void process_stuff(my_super_class* ptr)
    int a = 2;
    #+END_SRC
 
@@ -27,11 +26,10 @@
         """
         print ("will process {} + {}".format(a, b))
         return (a,b)
-
      example(2, 18)
    #+END_SRC
 
-** Commands
+== Commands
   | command        | action                                           |
   |----------------+--------------------------------------------------|
   | shift tab      | changes  fold                                    |
@@ -42,11 +40,11 @@
   | ctrlc ctrld    | add a deadline to a TODO element                 |
   | ctrlc ctrls    | append a datetime                                |
  
-** SPC commands
+== SPC commands
    spc mee    - export in different kind of files
 
-** Todo & cie
-*** TODO todo example 
+== Todo & cie
+*** TODO todo example
     DEADLINE: <2018-04-20 Fri>
     at the end of the title line (after example here) hit shift alt enter
     to go to the next line with another todo

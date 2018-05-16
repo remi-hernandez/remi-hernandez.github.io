@@ -1,26 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 16 May 2018 13:34:10 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 16 May 2018 13:37:09 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
 <p>#+TITLE: This is spacemacs title</p>
 </div>
 <div class="paragraph">
 <p>#+OPTIONS: toc:nil</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Org</p>
-<div class="ulist">
-<ul>
-<li>
-<p>categories</p>
+</div>
+</div>
+<h1 id="_org" class="sect0">Org</h1>
+<div class="sect1">
+<h2 id="_categories">categories</h2>
+<div class="sectionbody">
 <div class="literalblock">
 <div class="content">
 <pre>#+BEGIN_SRC c++
-void process_stuff(my_super_class* ptr);</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>int a = 2;
+void process_stuff(my_super_class* ptr)
+int a = 2;
 #+END_SRC</pre>
 </div>
 </div>
@@ -33,19 +29,19 @@ void process_stuff(my_super_class* ptr);</pre>
      use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
      """
      print ("will process {} + {}".format(a, b))
-     return (a,b)</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>  example(2, 18)
+     return (a,b)
+  example(2, 18)
 #+END_SRC</pre>
 </div>
 </div>
-</li>
-<li>
-<p>Commands
-| command        | action                                           |
+</div>
+</div>
+<div class="sect1">
+<h2 id="_commands">Commands</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>| command        | action                                           |
 |----------------+--------------------------------------------------|
 | shift tab      | changes  fold                                    |
 | ctrlc and wait | all the commands with description will displayed |
@@ -53,14 +49,24 @@ void process_stuff(my_super_class* ptr);</pre>
 | ctrlc ctrlc    | compute part                                     |
 | ctrlc ctrlt    | cycle through TODO states                        |
 | ctrlc ctrld    | add a deadline to a TODO element                 |
-| ctrlc ctrls    | append a datetime                                |</p>
-</li>
-<li>
-<p>SPC commands
-spc mee    - export in different kind of files</p>
-</li>
-<li>
-<p>Todo &amp; cie</p>
+| ctrlc ctrls    | append a datetime                                |</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spc_commands">SPC commands</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>spc mee    - export in different kind of files</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_todo_cie">Todo &amp; cie</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -111,13 +117,8 @@ use ctrlc ctrlc on one line to set or unset the state</p>
 </li>
 <li>
 <p>[X] item two</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Schedules
 SCHEDULED: &lt;2018-05-15 Tue&gt;
@@ -130,8 +131,10 @@ org-md-export-to-markdown     - export to a text file with markdown syntax (my_f
 </li>
 <li>
 <p>LaTex integration</p>
-<div class="ulist">
-<ul>
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>Characters: \alpha \rightarrow \beta</p>
 </li>
@@ -145,13 +148,8 @@ org-md-export-to-markdown     - export to a text file with markdown syntax (my_f
 \end{align*}</pre>
 </div>
 </div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Spc commands</p>
 <div class="ulist">
@@ -227,6 +225,14 @@ spc zX    - increase decrease font size</p>
 </div>
 </li>
 </ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>]]></description><link>https://remi-hernandez.github.io/2018/05/16/Spacemacs.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/05/16/Spacemacs.html</guid><category><![CDATA[spacemacs]]></category><category><![CDATA[tips]]></category><category><![CDATA[shortcuts]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Wed, 16 May 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Qml tips]]></title><description><![CDATA[<div class="paragraph">
 <p>In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&#8217;s position management will be broken.</p>
 </div>

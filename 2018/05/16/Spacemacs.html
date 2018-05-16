@@ -11,8 +11,8 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Sans:300,400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1526477650937" rel="stylesheet" type="text/css">
-    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1526477650937" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/style.css?v=1526477829560" rel="stylesheet" type="text/css">
+    <link href="//remi-hernandez.github.io/themes/saga/assets/css/animate.min.css?v=1526477829560" rel="stylesheet" type="text/css">
     <link href="https://remi-hernandez.github.io/favicon.ico" rel="shortcut icon">
     <link rel="canonical" href="https://remi-hernandez.github.io/2018/05/16/Spacemacs.html" />
     <meta name="referrer" content="origin" />
@@ -20,7 +20,7 @@
     <meta property="og:site_name" content="Pipou&#x27;s world" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Spacemacs" />
-    <meta property="og:description" content="#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr); int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use" />
+    <meta property="og:description" content="#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr) int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use" />
     <meta property="og:url" content="https://remi-hernandez.github.io/2018/05/16/Spacemacs.html" />
     <meta property="og:image" content="/images/spacemacs.png" />
     <meta property="article:published_time" content="2018-05-16T00:00:00.000Z" />
@@ -30,7 +30,7 @@
     
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Spacemacs" />
-    <meta name="twitter:description" content="#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr); int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use" />
+    <meta name="twitter:description" content="#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr) int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use" />
     <meta name="twitter:url" content="https://remi-hernandez.github.io/2018/05/16/Spacemacs.html" />
     <meta name="twitter:image:src" content="/images/spacemacs.png" />
     
@@ -51,7 +51,7 @@
     "datePublished": "2018-05-16T00:00:00.000Z",
     "image": "/images/spacemacs.png",
     "keywords": "spacemacs, tips, shortcuts",
-    "description": "#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr); int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use"
+    "description": "#+TITLE: This is spacemacs title #+OPTIONS: toc:nil Org categories #+BEGIN_SRC c++ void process_stuff(my_super_class* ptr) int a &#x3D; 2; #+END_SRC #+BEGIN_SRC python   def example(a, b):      &quot;&quot;&quot;      in a src block use ctrlc &#x27; (ctrlc + single quote) to edit the code block in editor      use"
 }
     </script>
 
@@ -85,29 +85,25 @@
 <main id="main" class="content">
     <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post post tag-spacemacs tag-tips tag-shortcuts">
         <section class="post-content">
-            <div class="paragraph">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
 <p>#+TITLE: This is spacemacs title</p>
 </div>
 <div class="paragraph">
 <p>#+OPTIONS: toc:nil</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Org</p>
-<div class="ulist">
-<ul>
-<li>
-<p>categories</p>
+</div>
+</div>
+<h1 id="_org" class="sect0">Org</h1>
+<div class="sect1">
+<h2 id="_categories">categories</h2>
+<div class="sectionbody">
 <div class="literalblock">
 <div class="content">
 <pre>#+BEGIN_SRC c++
-void process_stuff(my_super_class* ptr);</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>int a = 2;
+void process_stuff(my_super_class* ptr)
+int a = 2;
 #+END_SRC</pre>
 </div>
 </div>
@@ -120,19 +116,19 @@ void process_stuff(my_super_class* ptr);</pre>
      use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
      """
      print ("will process {} + {}".format(a, b))
-     return (a,b)</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>  example(2, 18)
+     return (a,b)
+  example(2, 18)
 #+END_SRC</pre>
 </div>
 </div>
-</li>
-<li>
-<p>Commands
-| command        | action                                           |
+</div>
+</div>
+<div class="sect1">
+<h2 id="_commands">Commands</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>| command        | action                                           |
 |----------------+--------------------------------------------------|
 | shift tab      | changes  fold                                    |
 | ctrlc and wait | all the commands with description will displayed |
@@ -140,14 +136,24 @@ void process_stuff(my_super_class* ptr);</pre>
 | ctrlc ctrlc    | compute part                                     |
 | ctrlc ctrlt    | cycle through TODO states                        |
 | ctrlc ctrld    | add a deadline to a TODO element                 |
-| ctrlc ctrls    | append a datetime                                |</p>
-</li>
-<li>
-<p>SPC commands
-spc mee    - export in different kind of files</p>
-</li>
-<li>
-<p>Todo &amp; cie</p>
+| ctrlc ctrls    | append a datetime                                |</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spc_commands">SPC commands</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>spc mee    - export in different kind of files</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_todo_cie">Todo &amp; cie</h2>
+<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
@@ -198,13 +204,8 @@ use ctrlc ctrlc on one line to set or unset the state</p>
 </li>
 <li>
 <p>[X] item two</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Schedules
 SCHEDULED: &lt;2018-05-15 Tue&gt;
@@ -217,8 +218,10 @@ org-md-export-to-markdown     - export to a text file with markdown syntax (my_f
 </li>
 <li>
 <p>LaTex integration</p>
-<div class="ulist">
-<ul>
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>Characters: \alpha \rightarrow \beta</p>
 </li>
@@ -232,13 +235,8 @@ org-md-export-to-markdown     - export to a text file with markdown syntax (my_f
 \end{align*}</pre>
 </div>
 </div>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Spc commands</p>
 <div class="ulist">
@@ -315,6 +313,14 @@ spc zX    - increase decrease font size</p>
 </li>
 </ul>
 </div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
         </section>
 
     </article>
@@ -343,7 +349,7 @@ spc zX    - increase decrease font size</p>
 
         hljs.initHighlightingOnLoad();
       </script>
-    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1526477650937"></script>
+    <script src="//remi-hernandez.github.io/themes/saga/assets/js/scripts.js?v=1526477829560"></script>
     
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

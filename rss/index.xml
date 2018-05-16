@@ -1,120 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 May 2018 18:03:34 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<h1 id="_org" class="sect0">Org</h1>
-<div class="sect1">
-<h2 id="_categories">categories</h2>
-<div class="sectionbody">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 16 May 2018 13:34:10 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div class="paragraph">
+<p>#+TITLE: This is spacemacs title</p>
+</div>
+<div class="paragraph">
+<p>#+OPTIONS: toc:nil</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Org</p>
+<div class="ulist">
+<ul>
+<li>
+<p>categories</p>
 <div class="literalblock">
 <div class="content">
-<pre>void process_stuff(my_super_class* ptr);</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>int a = 2;</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>def example(a, b):
-   """
-   in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
-   use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
-   """
-   print ("will process {} + {}".format(a, b))
-   return (a,b)</pre>
+<pre>#+BEGIN_SRC c++
+void process_stuff(my_super_class* ptr);</pre>
 </div>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>example(2, 18)</pre>
+<pre>int a = 2;
+#+END_SRC</pre>
 </div>
 </div>
+<div class="literalblock">
+<div class="content">
+<pre>#+BEGIN_SRC python
+  def example(a, b):
+     """
+     in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
+     use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
+     """
+     print ("will process {} + {}".format(a, b))
+     return (a,b)</pre>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_commands">Commands</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>&lt;table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides"&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;colgroup&gt;
-&lt;col  class="org-left" /&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;col  class="org-left" /&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col" class="org-left"&gt;command&lt;/th&gt;
-&lt;th scope="col" class="org-left"&gt;action&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="org-left"&gt;shift tab&lt;/td&gt;
-&lt;td class="org-left"&gt;changes  fold&lt;/td&gt;
-&lt;/tr&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tr&gt;
-&lt;td class="org-left"&gt;ctrlc and wait&lt;/td&gt;
-&lt;td class="org-left"&gt;all the commands with description will displayed&lt;/td&gt;
-&lt;/tr&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tr&gt;
-&lt;td class="org-left"&gt;ctrlc ctrle&lt;/td&gt;
-&lt;td class="org-left"&gt;export file&lt;/td&gt;
-&lt;/tr&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tr&gt;
-&lt;td class="org-left"&gt;ctrlc ctrlc&lt;/td&gt;
-&lt;td class="org-left"&gt;compute part&lt;/td&gt;
-&lt;/tr&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tr&gt;
-&lt;td class="org-left"&gt;ctrlc ctrlt&lt;/td&gt;
-&lt;td class="org-left"&gt;cycle through TODO states&lt;/td&gt;
-&lt;/tr&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tr&gt;
-&lt;td class="org-left"&gt;ctrlc ctrld&lt;/td&gt;
-&lt;td class="org-left"&gt;add a deadline to a TODO element&lt;/td&gt;
-&lt;/tr&gt;</p>
-</div>
-<div class="paragraph">
-<p>&lt;tr&gt;
-&lt;td class="org-left"&gt;ctrlc ctrls&lt;/td&gt;
-&lt;td class="org-left"&gt;append a datetime&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;</p>
+<div class="literalblock">
+<div class="content">
+<pre>  example(2, 18)
+#+END_SRC</pre>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_spc_commands">SPC commands</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc mee    - export in different kind of files</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_todo_cie">Todo &amp; cie</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_todo_todo_example">TODO todo example</h3>
-<div class="paragraph">
-<p>at the end of the title line (after example here) hit shift alt enter
+</li>
+<li>
+<p>Commands
+| command        | action                                           |
+|----------------+--------------------------------------------------|
+| shift tab      | changes  fold                                    |
+| ctrlc and wait | all the commands with description will displayed |
+| ctrlc ctrle    | export file                                      |
+| ctrlc ctrlc    | compute part                                     |
+| ctrlc ctrlt    | cycle through TODO states                        |
+| ctrlc ctrld    | add a deadline to a TODO element                 |
+| ctrlc ctrls    | append a datetime                                |</p>
+</li>
+<li>
+<p>SPC commands
+spc mee    - export in different kind of files</p>
+</li>
+<li>
+<p>Todo &amp; cie</p>
+<div class="ulist">
+<ul>
+<li>
+<p>TODO todo example
+DEADLINE: &lt;2018-04-20 Fri&gt;
+at the end of the title line (after example here) hit shift alt enter
 to go to the next line with another todo
 use ctrlc ctrld to add a deadline do a todo element</p>
-</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -128,18 +82,15 @@ use ctrlc ctrld to add a deadline do a todo element</p>
 </li>
 </ol>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_done_clycle_through_states">DONE clycle through states</h3>
-<div class="paragraph">
-<p>use ctrlc ctrlt tou cylcle through states</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_use_list_code_1_2_code">use list &lt;code&gt;[1/2]&lt;/code&gt;</h3>
-<div class="paragraph">
-<p>use ctrlc ctrlc on one line to set or unset the state</p>
-</div>
+</li>
+<li>
+<p>DONE clycle through states
+CLOSED: [2018-05-15 Tue 13:16]
+use ctrlc ctrlt tou cylcle through states</p>
+</li>
+<li>
+<p>use list [1/2]
+use ctrlc ctrlc on one line to set or unset the state</p>
 <div class="ulist checklist">
 <ul class="checklist">
 <li>
@@ -150,9 +101,9 @@ use ctrlc ctrld to add a deadline do a todo element</p>
 </li>
 </ul>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_use_other_list_code_50_code">use other list &lt;code&gt;[50%]&lt;/code&gt;</h3>
+</li>
+<li>
+<p>use other list [50%]</p>
 <div class="ulist checklist">
 <ul class="checklist">
 <li>
@@ -163,153 +114,120 @@ use ctrlc ctrld to add a deadline do a todo element</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_schedules">Schedules</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>use ctrlc ctrls to append a datetime
-move cursor on the datetime and use shift left / right to change the value</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_commands_spc_spc_my_sub_super_sub_sub_command_sub">commands (spc spc my&lt;sub&gt;super&lt;/sub&gt;&lt;sub&gt;command&lt;/sub&gt;)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>org-md-export-to-markdown     - export to a text file with markdown syntax (my&lt;sub&gt;file.md&lt;/sub&gt;)</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_latex_integration">LaTex integration</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>Characters: &alpha; &rarr; &beta;</p>
-</li>
-<li>
-<p>\(O(n \log n)\)</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>\begin{align*}
+</li>
+<li>
+<p>Schedules
+SCHEDULED: &lt;2018-05-15 Tue&gt;
+use ctrlc ctrls to append a datetime
+move cursor on the datetime and use shift left / right to change the value</p>
+</li>
+<li>
+<p>commands (spc spc my_super_command)
+org-md-export-to-markdown     - export to a text file with markdown syntax (my_file.md)</p>
+</li>
+<li>
+<p>LaTex integration</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Characters: \alpha \rightarrow \beta</p>
+</li>
+<li>
+<p>$O(n \log n)$</p>
+<div class="literalblock">
+<div class="content">
+<pre>\begin{align*}
   3 * 2 + 1 &amp;= 6 + 1\\
            &amp;= 7
-\end{align*}</p>
+\end{align*}</pre>
 </div>
 </div>
+</li>
+</ul>
 </div>
-<h1 id="_spc_commands_2" class="sect0">Spc commands</h1>
-<div class="sect1">
-<h2 id="_spacemacs_config">Spacemacs config</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc fed  - edit spacemacs dotfile
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Spc commands</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Spacemacs config
+spc fed  - edit spacemacs dotfile
 spc feR  - reload spacemacs config</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_toogle">toogle</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc tn    - toogle line number</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_ui_toogles">UI toogles</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc TF    - toogle fullscreen mode</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_file">file</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc ft    - toogle neotree
+</li>
+<li>
+<p>toogle
+spc tn    - toogle line number</p>
+</li>
+<li>
+<p>UI toogles
+spc TF    - toogle fullscreen mode</p>
+</li>
+<li>
+<p>file
+spc ft    - toogle neotree
 spc ff    - open file</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_project">project</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Create en empty file named .projectile in your project root directory</p>
-</div>
-<div class="paragraph">
-<p>spc pp    - switch project
+</li>
+<li>
+<p>project
+Create en empty file named .projectile in your project root directory</p>
+<div class="literalblock">
+<div class="content">
+<pre>spc pp    - switch project
 spc pf    - find a file in your project
-spc /     - find text in project</p>
+spc /     - find text in project</pre>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_buffer">buffer</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc tab   - last buffer
+</li>
+<li>
+<p>buffer
+spc tab   - last buffer
 spc bn    - next buffer
 spc bb    - show the list of current buffers
 spc bd    - delete buffer</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_window">window</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc wS    - split windows vertical
+</li>
+<li>
+<p>window
+spc wS    - split windows vertical
 spc nb of window - switch to &lt;number of window&gt;
 spc wc    - close a window</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_git">git</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc gs    - git statu</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_shell">shell</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc '     - toogle the little shell</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_others">others</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>spc h[x]  - help on [x]
+</li>
+<li>
+<p>git
+spc gs    - git statu</p>
+</li>
+<li>
+<p>shell
+spc '     - toogle the little shell</p>
+</li>
+<li>
+<p>others
+spc h[x]  - help on [x]
 spc zX    - increase decrease font size</p>
+</li>
+<li>
+<p>: commands
+:shell    - start a shell in a buffer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Packages</p>
+<div class="literalblock">
+<div class="content">
+<pre>spc spc package-install to install a package</pre>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="__commands">: commands</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>:shell    - start a shell in a buffer</p>
-</div>
-</div>
-</div>
-<h1 id="_packages" class="sect0">Packages</h1>
-<div class="paragraph">
-<p>spc spc package-install to install a package</p>
-</div>]]></description><link>https://remi-hernandez.github.io/2018/05/14/Spacemacs.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/05/14/Spacemacs.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Mon, 14 May 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Qml tips]]></title><description><![CDATA[<div class="paragraph">
+</li>
+</ul>
+</div>]]></description><link>https://remi-hernandez.github.io/2018/05/16/Spacemacs.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/05/16/Spacemacs.html</guid><category><![CDATA[spacemacs]]></category><category><![CDATA[tips]]></category><category><![CDATA[shortcuts]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Wed, 16 May 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Qml tips]]></title><description><![CDATA[<div class="paragraph">
 <p>In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don&#8217;t have to put anchors.fill: parent to one of the sons, if you do this the son&#8217;s position management will be broken.</p>
 </div>
 <div class="paragraph">

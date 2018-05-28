@@ -4,6 +4,10 @@
 :hp-tags: tools, sowftware, utils
 // :hp-alt-title: My English Title
 
+=== Powerpoint like presentation on linux
+
+https://github.com/Philip-Scott/Spice-up
+
 === Disk space
 windows : winDirStat https://windirstat.net/download.html
 

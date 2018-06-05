@@ -229,4 +229,34 @@ for (auto mapKey : myMap.keys()) {
 }
 ----
 
+=== Const
+
+===== const function
+
+[source, cpp]
+----
+int foo::bar(int random_arg) const; 
+// can be understood as a declaration with a this const pointer
+// -> no modification of member variables are possible.
+----
+
+A "const function", denoted with the keyword const after a function declaration, makes it a compiler error for this class function to change a member variable of the class. However, reading of a class variables is ok inside of the function, but writing inside of this function will generate a compiler error. 
+
+===== const returned value
+
+In C, because function return values, and qualifying values is meaningless.
+It may be different in C++, check other answers.
+
+[source, cpp]
+----
+const int i = (const int)42; /* meaningless, the 42 is never gonna change */
+int const foo(void); /* meaningless, the value returned from foo is never gonna change */
+
+// Only objects can be meaningfully qualified.
+
+const int *ip = (const int *)&errno; /* ok, `ip` points to an object qualified with `const` */
+const char *foo(void); /* ok, `foo()` returns a pointer to a qualified object */
+----
+
+Note that for class types, the const for return values is not meaningless, as you are allowed to call modifying member functions on non-const rvalues. (We just had this here with strings the other day: (s1+s2).append(s3).) As usual, litb's answer explains all this both in detail and correctness.
 

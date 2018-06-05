@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 28 May 2018 10:55:40 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Rust tips n tricks]]></title><description><![CDATA[<div class="sect1">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 05 Jun 2018 07:48:59 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Rust tips n tricks]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_basics">Basics</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -1175,6 +1175,43 @@ for (auto map : myMap.toStdMap()) {
 for (auto mapKey : myMap.keys()) {
 	qDebug() &lt;&lt; "key : " &lt;&lt; mapKey &lt;&lt; " value : " &lt;&lt; myMap.value(mapKey);
 }</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_const">Const</h3>
+<div class="sect4">
+<h5 id="_const_function">const function</h5>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">int foo::bar(int random_arg) const;
+// can be understood as a declaration with a this const pointer
+// -&gt; no modification of member variables are possible.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A "const function", denoted with the keyword const after a function declaration, makes it a compiler error for this class function to change a member variable of the class. However, reading of a class variables is ok inside of the function, but writing inside of this function will generate a compiler error.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_const_returned_value">const returned value</h5>
+<div class="paragraph">
+<p>In C, because function return values, and qualifying values is meaningless.
+It may be different in C++, check other answers.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-cpp" data-lang="cpp">const int i = (const int)42; /* meaningless, the 42 is never gonna change */
+int const foo(void); /* meaningless, the value returned from foo is never gonna change */
+
+// Only objects can be meaningfully qualified.
+
+const int *ip = (const int *)&amp;errno; /* ok, `ip` points to an object qualified with `const` */
+const char *foo(void); /* ok, `foo()` returns a pointer to a qualified object */</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that for class types, the const for return values is not meaningless, as you are allowed to call modifying member functions on non-const rvalues. (We just had this here with strings the other day: (s1+s2).append(s3).) As usual, litb&#8217;s answer explains all this both in detail and correctness.</p>
 </div>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2016/10/30/CC-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2016/10/30/CC-tips.html</guid><category><![CDATA[c]]></category><category><![CDATA[c++]]></category><category><![CDATA[tips]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Sun, 30 Oct 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Google maps zoom theory and example with {C++/qt ; QWT}]]></title><description><![CDATA[<div class="sect4">

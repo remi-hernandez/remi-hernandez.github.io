@@ -139,5 +139,12 @@
   
   spc spc package-install to install a package
   
+  En tete a mettre en haut d'un fichier org pour les marges etc
+  [org]
+  ----
+  #+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+  #+LATEX_HEADER: \usepackage[hidelinks]{hyperref}
+  #+LATEX_HEADER: \usepackage{palatino}
+  ----
 
     

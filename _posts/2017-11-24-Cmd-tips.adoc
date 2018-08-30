@@ -63,3 +63,22 @@ sudo docker start tf # will run the container
 sudo docker attach tf # will attach to the docker terminal
 
 
+=== tunnel ssh
+(plex)
+ssh -N -L 3200:server.com:32400 server.com  
+http://localhost:3200/web/index.html
+
+=== docker
+
+docker ps     - list all containers
+docker exec   - run a command in a running container
+
+
+docker-compose down --remove-orphans
+docker-compose up -d (detach)
+docker exec -it plex_container /bin/bash
+
+https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start
+
+
+

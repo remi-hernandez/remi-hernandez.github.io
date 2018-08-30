@@ -4,3 +4,16 @@
 // :published_at: 2019-01-31
 // :hp-tags: HubPress, Blog, Open_Source,
 // :hp-alt-title: My English Title
+
+
+cmd    - action
+docker ps     - list all containers
+docker exec   - run a command in a running container
+
+
+
+
+== Debug tips
+
+Check the logs of what's inside of the container. e.g.: we want to check the logs of plex. For it we want to have a shell running inside our container. We will find the name of our container using `docker ps`, let's say "plex_container" and the use `docker exec -it plex_container`.
+

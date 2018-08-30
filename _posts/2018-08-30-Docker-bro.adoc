@@ -11,6 +11,10 @@ docker ps     - list all containers
 docker exec   - run a command in a running container
 
 
+docker-compose down --remove-orphans
+docker-compose up -d (detach)
+
+https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start
 
 
 == Debug tips

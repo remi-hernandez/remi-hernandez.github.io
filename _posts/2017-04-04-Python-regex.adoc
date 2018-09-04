@@ -69,3 +69,27 @@ TOP FL410 MOV E 10KT NC
         f.write(new_content)
         f.close()
 ----
+
+==== findall()
+
+This function find all occurences of a pattern.
+Note at the end of the regex : `((?![\(,]).|\s)*[\(,]))` this part will look for every character except '(' and ','.
+
+[source, python]
+----
+def get_sigmets_in_string_list(string_to_parse):
+    compiled_regex = re.compile(r'(((((WC|WS|WV)[A-Z]{2}\d{2})\s+([A-Z]{4})\s+([0-9]{6})\s+(CC[AB])?)(([A-Z]{4})\s+SIGMET\s+((\w+\s+){1,})VALID\s+(([0-9]{6})\/([0-9]{6}))\s+([A-Z]{4}-))((?![\(,]).|\s)*[\(,]))')
+    sigmet_list = compiled_regex.findall(string_to_parse)
+    cleaned_list = []
+    for sigmet in sigmet_list:
+        tmp_list = list(sigmet[0])
+        tmp_list[len(tmp_list) - 1] = '='
+        cleaned_list.append("".join(tmp_list))
+
+    #for sigmet in cleaned_list:
+    #    print("\n\nsigmet : [{}]".format(sigmet))
+
+    return cleaned_list
+    
+----
+

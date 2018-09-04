@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 09 Aug 2018 13:01:18 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Rust tips n tricks]]></title><description><![CDATA[<div class="sect1">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 04 Sep 2018 08:10:25 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Rust tips n tricks]]></title><description><![CDATA[<div class="sect1">
 <h2 id="_basics">Basics</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -948,6 +948,30 @@ TOP FL410 MOV E 10KT NC</p>
         f = open(file_name, "w")
         f.write(new_content)
         f.close()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_findall">findall()</h4>
+<div class="paragraph">
+<p>This function find all occurences of a pattern.
+Note at the end of the regex : <code>?![\(,]).|\s)*[\(,]</code> this part will look for every character except '(' and ','.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">def get_sigmets_in_string_list(string_to_parse):
+    compiled_regex = re.compile(r'(((((WC|WS|WV)[A-Z]{2}\d{2})\s+([A-Z]{4})\s+([0-9]{6})\s+(CC[AB])?)(([A-Z]{4})\s+SIGMET\s+((\w+\s+){1,})VALID\s+(([0-9]{6})\/([0-9]{6}))\s+([A-Z]{4}-))((?![\(,]).|\s)*[\(,]))')
+    sigmet_list = compiled_regex.findall(string_to_parse)
+    cleaned_list = []
+    for sigmet in sigmet_list:
+        tmp_list = list(sigmet[0])
+        tmp_list[len(tmp_list) - 1] = '='
+        cleaned_list.append("".join(tmp_list))
+
+    #for sigmet in cleaned_list:
+    #    print("\n\nsigmet : [{}]".format(sigmet))
+
+    return cleaned_list</code></pre>
 </div>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2017/04/04/Python-regex.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/04/04/Python-regex.html</guid><category><![CDATA[python]]></category><category><![CDATA[regex]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 04 Apr 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[C/C++ tips]]></title><description><![CDATA[<div class="sect2">

@@ -216,6 +216,8 @@ True
 True
 ----
 
+==== script with arguments
 
+Use click library : http://click.pocoo.org/5/
 
 

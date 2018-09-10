@@ -6,7 +6,7 @@
 // :hp-alt-title: My English Title
 
 
-cmd    - action
+cmd           - action
 docker ps     - list all containers
 docker exec   - run a command in a running container
 
@@ -17,7 +17,7 @@ docker-compose up -d (detach)
 https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start
 
 
-== Debug plex
+== Debug container
 
 Check the logs of what's inside of the container. e.g.: we want to check the logs of plex. For it we want to have a shell running inside our container. We will find the name of our container using `docker ps`, let's say "plex_container" and the use `docker exec -it plex_container`.
 

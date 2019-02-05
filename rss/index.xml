@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 10 Sep 2018 14:25:26 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Pipou's world]]></title><description><![CDATA[__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.]]></description><link>https://remi-hernandez.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 05 Feb 2019 12:17:52 GMT</lastBuildDate><atom:link href="https://remi-hernandez.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Docker cmd]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>cmd           - action
+docker ps     - list all containers
+docker exec   - run a command in a running container</p>
+</div>
+<div class="paragraph">
+<p>docker-compose down --remove-orphans
+docker-compose up -d (detach)</p>
+</div>
+<div class="paragraph">
+<p><a href="https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start" class="bare">https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_debug_container">Debug container</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Check the logs of what&#8217;s inside of the container. e.g.: we want to check the logs of plex. For it we want to have a shell running inside our container. We will find the name of our container using <code>docker ps</code>, let&#8217;s say "plex_container" and the use <code>docker exec -it plex_container</code>.</p>
+</div>
+<div class="paragraph">
+<p>When the container is setted up don&#8217;t forget to create a ssh tunnel for the port forwarding <code>ssh -N -L 3200:server.com:32400 server.com ` and then go on `http://localhost:3200/web/index.html</code> to claim the server.</p>
+</div>
+</div>
+</div>]]></description><link>https://remi-hernandez.github.io/2018/08/30/Docker-cmd.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2018/08/30/Docker-cmd.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Thu, 30 Aug 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Spacemacs]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>#+TITLE: This is spacemacs title</p>
@@ -342,7 +368,7 @@ ta.py  toto.py</code></pre>
 <p>ssh tunnel plex :
 <a href="https://plaza.quickbox.io/t/setting-up-an-ssh-tunnel-for-plex/135" class="bare">https://plaza.quickbox.io/t/setting-up-an-ssh-tunnel-for-plex/135</a></p>
 </div>
-</div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</guid><category><![CDATA[bash]]></category><category><![CDATA[commands]]></category><category><![CDATA[tips]]></category><category><![CDATA[unix]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
+</div>]]></description><link>https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/27/Cmd-tips.html</guid><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Fri, 27 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[Tools / usefull softwares]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_powerpoint_like_presentation_on_linux">Powerpoint like presentation on linux</h3>
 <div class="paragraph">
 <p><a href="https://github.com/Philip-Scott/Spice-up" class="bare">https://github.com/Philip-Scott/Spice-up</a></p>
@@ -363,7 +389,7 @@ ta.py  toto.py</code></pre>
 <div class="sect2">
 <h3 id="_crash_analyse_on_windows">Crash analyse on windows</h3>
 <div class="paragraph">
-<p>"observateur d'évènements" journaux windows, application, il y a un log assez détaillé sur les crash</p>
+<p>"observateur d&#8217;évènements" journaux windows, application, il y a un log assez détaillé sur les crash</p>
 </div>
 </div>]]></description><link>https://remi-hernandez.github.io/2017/10/03/Tools-usefull-softwares.html</link><guid isPermaLink="true">https://remi-hernandez.github.io/2017/10/03/Tools-usefull-softwares.html</guid><category><![CDATA[tools]]></category><category><![CDATA[sowftware]]></category><category><![CDATA[utils]]></category><dc:creator><![CDATA[Remi Hernandez]]></dc:creator><pubDate>Tue, 03 Oct 2017 00:00:00 GMT</pubDate></item><item><title><![CDATA[DB tips]]></title><description><![CDATA[<div class="sect2">
 <h3 id="_what_s_here">What&#8217;s here ?</h3>

@@ -1,0 +1,247 @@
+<p>= C/C++ tips
+:hp-tags: c, c++, tips
+:hp-image: /images/cpp.jpg</p>
+
+<p>=== What’s here ?</p>
+
+<p>Here you will find some tips n tricks around C++.</p>
+
+<p>=== Ternary</p>
+
+<h2 id="sourcecpp">[source,cpp]</h2>
+<p>bool test = true;</p>
+
+<p>(test) ? std::cout « “yes” : std::cout « “no”; // will print yes</p>
+
+<hr />
+
+<p>=== Get int* len on linux and windows</p>
+
+<h2 id="sourcecpp-1">[source,cpp]</h2>
+<p>#include <stdio.h>
+#include <malloc.h></malloc.h></stdio.h></p>
+
+<p>#ifdef linux
+#define array_size(x) malloc_usable_size(x)
+#endif</p>
+
+<p>#ifdef _WIN32
+#define array_size(x) _msize(x)
+#endif</p>
+
+<p>int main(int argc, char<em>*argv)
+{
+    int         len;
+    int         *array = malloc(sizeof(int)</em>10);</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>len = array_size(array);
+len = len / 4; 				// because array_size return size_t
+
+printf("len : %d\n", len);
+return(0); } ----
+</code></pre></div></div>
+
+<p>=== Two ways to iterate</p>
+
+<h2 id="sourcecpp-2">[source,cpp]</h2>
+<p>std::vector<double> latWayPoints;
+// fill vector</double></p>
+
+<p>for (std::vector<double>::iterator it = latWaypoints.begin(); it != latWaypoints.end(); ++it)
+    qDebug() &lt;&lt; "&gt;&gt; latWay : " &lt;&lt; *it;</double></p>
+
+<p>for (double lon: lonWaypoints)
+    qDebug() « ”» latWay : “ « lon;
+—-</p>
+
+<p>==== cpp method callable from qml
+[source,cpp]
+—-</p>
+
+<p>// .h
+Q_INVOKABLE void my_function();</p>
+
+<p>//.cpp
+void my_class::my_function() 
+{
+  // do stuff
+}</p>
+
+<p>//.qml
+onMyEvent: {
+    item.my_function();
+}
+—-</p>
+
+<p>=== cast</p>
+
+<p>dynamic_cast pour les classes héritées surtout, 
+static_cast pour les types de base,
+reinterpret_cast pour forcer un cast de n’importe quoi vers n’importe quoi
+et const_cast pour pouvoir passer des string en entrée à des vieilles fonctions C qui veulent des char*</p>
+
+<p>=== Concat arrays C style in C++</p>
+
+<h2 id="sourcecpp-3">[source,cpp]</h2>
+<p>void concatArrays(unsigned char * &amp;src, int dstOffset, unsigned char * dst)
+{
+    int j = 0;
+    int i = 0;
+    int srcLen =  strlen(reinterpret_cast&lt;char *&gt;(src));
+    int dstLen =  strlen(reinterpret_cast&lt;char *&gt;(dst));
+    unsigned char * tmp = new unsigned char [srcLen + dstLen + 1];</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for (i = 0; i &lt; srcLen; ++i)
+{
+   tmp[i] = src[i];
+}
+
+i = dstOffset;
+
+while (j &lt; dstLen &amp;&amp; i &lt; (srcLen + dstLen + 1))
+{
+    tmp[i] = dst[j];
+    i++;
+    j++;
+}
+
+delete [] src;
+src = tmp; }
+</code></pre></div></div>
+
+<p>void test(unsigned char * buffer, unsigned char * append)
+{
+  std::cout « “buffer : “ « buffer « std::endl;
+  concatArrays(buffer, 4, append);
+  std::cout « “buffer -&gt; : “ « buffer « std::endl;
+}</p>
+
+<p>int main()
+{
+  char * buffer = new char [5];
+  char * append = new char [10];</p>
+
+<p>strcpy(buffer, “tato”);
+  strcpy(append, “chipolata”);</p>
+
+<p>test(reinterpret_cast&lt;unsigned char *&gt;(buffer), reinterpret_cast&lt;unsigned char *&gt;(append));
+}
+—-</p>
+
+<p>=== Pragma and warnings</p>
+
+<p>You can use pragma to lower the warnings level at build time or to disable some kinds of warnings.</p>
+
+<h2 id="source-cpp">[source, cpp]</h2>
+<p>#pragma warning(push,0)
+// here include libs that you can’t touch and you don’t want build warnings from
+#include <fstream>
+#pragma warning(pop)</fstream></p>
+
+<p>// To disable the warnings “deprecated” for C functions like strcpy under windows</p>
+
+<p>#ifdef _MSC_VER
+#pragma warning(push)
+#pragma warning(disable : 4996)
+#endif</p>
+
+<p>strcpy(); 
+#ifdef _MSC_VER
+#pragma warning(pop)
+#endif
+—-</p>
+
+<p>=== Create a class to not include it</p>
+
+<p>When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don’t include the “myClass.h”, include it only in cpp and prefer this way :</p>
+
+<h2 id="sourcecpp-4">[source,cpp]</h2>
+<h1 id="include-">include <someStuff></someStuff></h1>
+
+<p>namespace tata { namespace tutu {
+	class myClass;
+}}</p>
+
+<p>class testClass 
+{
+public:
+	testClass();</p>
+
+<p>private:
+	tata::tutu::myClass * _myPtr;
+};</p>
+
+<hr />
+
+<p>=== Random between min and max
+[source,cpp]
+—-
+#include <iostream>
+#include <time.h></time.h></iostream></p>
+
+<p>int main() 
+{
+  int min = 5;
+  int max = 10;</p>
+
+<p>srand(time(NULL));
+  int random = ( rand() % ( max - min + 1 ) ) + min;
+  std::cout « random « std::endl;
+}
+—-</p>
+
+<p>=== osg geometry usage</p>
+
+<h2 id="sourcecpp-5">[source,cpp]</h2>
+<p>#include &lt;osgEarthFeatures/Feature&gt;
+#include &lt;osgEarthFeatures/GeometryUtils&gt;</p>
+
+<p>std::string wkt_geom; // geom at wkt format</p>
+
+<p>osgEarth::Symbology::Geometry geom = osgEarth::Features::GeometryUtils::geometryFromWKT(wkt_geom);</p>
+
+<hr />
+
+<p>=== map iterations
+[source, cpp]
+—-
+QMap&lt;QString, QString&gt; myMap;</p>
+
+<p>for (auto map : myMap.toStdMap()) {
+	qDebug() « “key : “ « map.first « ” value : “ « map.second;
+}</p>
+
+<p>for (auto mapKey : myMap.keys()) {
+	qDebug() « “key : “ « mapKey « ” value : “ « myMap.value(mapKey);
+}
+—-</p>
+
+<p>=== Const</p>
+
+<p>===== const function</p>
+
+<h2 id="source-cpp-1">[source, cpp]</h2>
+<p>int foo::bar(int random_arg) const; 
+// can be understood as a declaration with a this const pointer
+// -&gt; no modification of member variables are possible.
+—-</p>
+
+<p>A “const function”, denoted with the keyword const after a function declaration, makes it a compiler error for this class function to change a member variable of the class. However, reading of a class variables is ok inside of the function, but writing inside of this function will generate a compiler error.</p>
+
+<p>===== const returned value</p>
+
+<p>In C, because function return values, and qualifying values is meaningless.
+It may be different in C++, check other answers.</p>
+
+<h2 id="source-cpp-2">[source, cpp]</h2>
+<p>const int i = (const int)42; /* meaningless, the 42 is never gonna change <em>/
+int const foo(void); /</em> meaningless, the value returned from foo is never gonna change */</p>
+
+<p>// Only objects can be meaningfully qualified.</p>
+
+<p>const int <em>ip = (const int *)&amp;errno; /</em> ok, <code class="highlighter-rouge">ip</code> points to an object qualified with <code class="highlighter-rouge">const</code> <em>/
+const char *foo(void); /</em> ok, <code class="highlighter-rouge">foo()</code> returns a pointer to a qualified object */
+—-</p>
+
+<p>Note that for class types, the const for return values is not meaningless, as you are allowed to call modifying member functions on non-const rvalues. (We just had this here with strings the other day: (s1+s2).append(s3).) As usual, litb’s answer explains all this both in detail and correctness.</p>
+

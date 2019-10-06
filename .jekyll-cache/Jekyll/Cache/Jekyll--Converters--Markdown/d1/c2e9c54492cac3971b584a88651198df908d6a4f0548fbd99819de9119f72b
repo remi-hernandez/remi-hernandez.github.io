@@ -1,0 +1,190 @@
+I"�<p>= Vim tips and shortcuts
+:hp-tags: vim, tips, shortcuts
+:hp-image: /images/vim.png</p>
+
+<p>Vim</p>
+
+<p>http://www.thegeekstuff.com/2009/04/ctags-taglist-vi-vim-editor-as-sourece-code-browser/</p>
+
+<p>NerdTree : http://ngressier.developpez.com/articles/vim/vim-plugin-nerdtree/
+           nmap <silent> <C-D> :NERDTreeToggle<CR> "remap l'ouverture de nerdtree (ctrl-e devient ctrl-d) (si tu as spf13 commente la ligne map <C-e> <plug>Ne[...]
+soluce : map <F9> <plug>NERDTreeToggle<CR></CR></plug></F9></plug></C-e></CR></C-D></silent></p>
+
+<p>multipaste : https://stackoverflow.com/questions/7163947/paste-multiple-times</p>
+
+<p>https://dougblack.io/words/a-good-vimrc.html | config
+liens op : http://vimcasts.org/</p>
+
+<p>=== qt-creator config
+alt v, alt v : active / désactive fake vim</p>
+
+<p>dans options / editeur de texte / completion / active completion : manually avec ctrl espace comme ça la popup ne gène pas lors de petites modifs pour le echap (double echap, un pour la popup et un pour mode commande).</p>
+
+<p>ajouter dans fakeVim/command mapping : Run run</p>
+
+<p>image:screen_options_vim_qt.png[options screen, 500, 500, align=”center”]</p>
+
+<p>dans le _vimrc (outils/options/fakeVim/lire .vimrc depuis…)</p>
+
+<p>map qq :run<CR></CR></p>
+
+<hr />
+<p>en mode insert (i)</p>
+
+<p>ctrl-w      - supprime le mot précédent le curseur
+ctrl-u      - supprime la ligne précédent le curseur</p>
+
+<p>mode commande (esc)</p>
+
+<p>i          - passe en mode insertion avant le curseur
+a          - passe en mode insertion après le curseur
+ctrl+d     - scroll vers le bas et déplace le curseur vers le bas de mi écran
+ctrl+u     - scroll vers le haut et déplace le curseur vers le haut de mi écran
+ctrl+e     - scroll vers le bas sans déplacer le curseur
+ctrl+y     - scroll vers le haut sans déplacer le curseur
+zz         - scroll pour mettre la ligne courante au millieu de l’écran 
+zt         - idem mais monte en haut de l’ecran
+zb         - idem mais descends en bas de l’ecran
+^          - se déplace au premier caractère de la ligne
+w          - se déplacer au début du mot suivant
+e          - se déplacer à la fin du mot suivant
+b          - se déplacer au début du mot précédent
+cw         - supprime du curseur jusqu’a la fin du mot et passe en mode insert
+y 		   - copie la sélection (sélectione avec v)
+gv		   - sélectionne la dernière sélection
+gvy        - copie la dernière sélection
+{ ou }     - se déplacer de paragraphe en paragraphe
+%          - aller à l’occurence suivante du caractère (ex accolade fermante)</p>
+<ul>
+  <li>
+    <ul>
+      <li>chercher le mot sur lequel est le curseur
+[I         - show lines with matching word under cursor
+mk         - mark current position
+‘k         - move to mark k
+d’k        - delete from current position to mark k
+f          - f suivi d’une lettre ex : ft va positionner le curseur sur la lettre t suivante dans la ligne, idem mais précédente avec F
+J          - Join la ligne suivante à la fin de la courante
+R          - passe en mode replace 
+V          - mode visual : sélectionne la ligne courante
+vap        - mode visual sur un paragraphe
+v2ap       - to select two paragraphs
+dap        - supprime un paragraphe
+{ ou }     - se déplace de paragraphe en paragraphe
+==         - reindente la ligne courante
+ctrl+w / fleche - change de split
+/pattern   - cherche le pattern
+n          - next pattern
+N          - previous pattern</li>
+    </ul>
+  </li>
+  <li>remonte de { en {</li>
+  <li>ou +     - monte ou descends de ligne en se mettant au premier caractère de la ligne.
+ctrl+g     - cherche le pattern courant
+ctrl+n     - autocompletion (et ctrl+p pour aller en arrière)
+ctrl+x, ctrl+f - défini l’autocompletion sur les fichiers (path)
+    -&gt; /lictrlx, ctrlf bababa / ctrlx, ctrlf etc</li>
+</ul>
+
+<p>cw 	       - change to next word
+cc         - change entire line
+ce         - change from cursor to end of word
+c$         - change to end of line
+ci”        - change inside double quotes
+ca”        - change around double quotes
+cfx        - change until next found occurrence of x</p>
+
+<p>zf         - crée un fold sur la sélection (selectionne les lignes en visual avant)
+zo         - open fold 
+zc         - close fold
+zO         - open all folds
+zC         - close all folds
+zr         - open fold recursivly</p>
+
+<p>Splits :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ctrl+W +/-: increase/decrease height
+Ctrl+W &gt;/&lt;: increase/decrease width
+Ctrl+W _: set height (ex. 50&lt;C-w&gt;_)
+Ctrl+W |: set width (ex. 50&lt;C-w&gt;|)
+Ctrl+W =: equalize width and height of all windows
+</code></pre></div></div>
+
+<p>Mode visual:</p>
+
+<p>=       - indente correctement la selection</p>
+
+<p>commandes :</p>
+
+<p>:%s/search_for_this/replace_with_this/c - confirm each change
+:e ou :edit monfichier.py - edit le fichier
+:find pattern             - trouve le fichier {pattern} and :edit dessus
+:find *spec               - en faisant tab, vas proposer tous les fichiers finissant par spec
+:set list                 - affiche les espaces avec des $
+:set nolist 
+:edit seul ou :edit!      - reload un fichier (ex : modifié ailleurs) et ! sans tenir compte des modifs (:vsp ou :sp pour avoir les 2 fichiers :3)
+:set paste                - passe en mode paste</p>
+
+<p>diff commands
+:diffthis                 - passe en mode diff sur le fichier
+:diffoff 
+dp diffput:             puts changes under the cursor into the other file
+                        making them identical (thus removing the diff).
+do  diffget:            (o =&gt; obtain). The change under the cursor is replaced
+                        by the content of the other file making them identical.
+]c                      Jump to the next diff
+[c</p>
+
+<p>ajouter des ‘ autour d’un mot (tata devient ‘tata’) : se mettre au début du mot <esc>ysiw' possibilité de répéter l'action sur un autre mot en se mettant sur le mot suivant et en faisant .</esc></p>
+
+<p>:earlier 2m              - revient en arriere de 2min</p>
+
+<p>tabs : 
+:tabedit {file}   edit specified file in a new tab
+:tabfind {file}   open a new tab with filename given, searching the ‘path’ to find it
+:tabclose         close current tab
+:tabclose {i}     close i-th tab
+:tabonly          close all other tabs (show only the current tab)
+:tabs         list all tabs including their displayed windows
+:tabm 0       move current tab to first
+:tabm         move current tab to last
+:tabm {i}     move current tab to position i+1
+{i}gt         go to tab in position i</p>
+
+<p>Basique vim :</p>
+
+<p>$cat ~/.vimrc
+set nu
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+set mouse=a
+set showcmd
+set wildmode=longest,list,full
+set wildmenu
+set foldmethod=manual
+colorscheme peachpuff
+colorscheme gruvbox
+nnoremap q a”<Esc> -&gt; permet d'avoir la double quote
+nnoremap Q i"<Esc>
+set path+= **</Esc></Esc></p>
+
+<p>color gruvbox
+set background=dark<br />
+execute “set <M-0>=\e0"
+map <M-0> <plug>NERDTreeTabsToggle<CR></CR></plug></M-0></M-0></p>
+
+<p>Next tab: gt
+Prior tab: gT
+Numbered tab: nngt</p>
+
+<p>Need to understand / learn :</p>
+
+<p>:b pattern -&gt; lets you autocomplete an
+les tags (ctrl + x, ctrl + ] -&gt; autocomplete with tags)
+would use ctags and then just use :tag to jump to the definition and :pop to come back</p>
+
+<p>To stop indenting when pasting with the mouse, add this to your .vimrc:</p>
+
+<p>:set pastetoggle=<f5></f5></p>
+
+<h2 id="then-try-hitting-the-f5-key-while-in-insert-mode-or-just-set-paste">then try hitting the F5 key while in insert mode (or just :set paste).</h2>
+:ET

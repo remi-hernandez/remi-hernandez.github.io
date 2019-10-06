@@ -1,0 +1,209 @@
+I"?<p>= Spacemacs
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title</p>
+
+<h1 id="org">Org</h1>
+
+<h2 id="categories">categories</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void process_stuff(my_super_class* ptr);
+
+int a = 2;
+
+def example(a, b):
+   """
+   in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
+   use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
+   """
+   print ("will process {} + {}".format(a, b))
+   return (a,b)
+
+example(2, 18)
+</code></pre></div></div>
+
+<h2 id="commands">Commands</h2>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col class="org-left" />
+
+<col class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">command</th>
+<th scope="col" class="org-left">action</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">shift tab</td>
+<td class="org-left">changes  fold</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ctrlc and wait</td>
+<td class="org-left">all the commands with description will displayed</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ctrlc ctrle</td>
+<td class="org-left">export file</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ctrlc ctrlc</td>
+<td class="org-left">compute part</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ctrlc ctrlt</td>
+<td class="org-left">cycle through TODO states</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ctrlc ctrld</td>
+<td class="org-left">add a deadline to a TODO element</td>
+</tr>
+
+
+<tr>
+<td class="org-left">ctrlc ctrls</td>
+<td class="org-left">append a datetime</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="spc-commands">SPC commands</h2>
+
+<p>spc mee    - export in different kind of files</p>
+
+<h2 id="todo--cie">Todo &amp; cie</h2>
+
+<h3 id="todo-todo-example">TODO todo example</h3>
+
+<p>at the end of the title line (after example here) hit shift alt enter
+to go to the next line with another todo
+use ctrlc ctrld to add a deadline do a todo element</p>
+
+<ol class="task-list">
+  <li>under task one.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />under task two.</li>
+  <li class="task-list-item">[ ]</li>
+</ol>
+
+<h3 id="done-clycle-through-states">DONE clycle through states</h3>
+
+<p>use ctrlc ctrlt tou cylcle through states</p>
+
+<h3 id="use-list-12">use list <code>[1/2]</code></h3>
+
+<p>use ctrlc ctrlc on one line to set or unset the state</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />task one</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />task two</li>
+</ul>
+
+<h3 id="use-other-list-50">use other list <code>[50%]</code></h3>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />item one</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />item two</li>
+</ul>
+
+<h2 id="schedules">Schedules</h2>
+
+<p>use ctrlc ctrls to append a datetime
+move cursor on the datetime and use shift left / right to change the value</p>
+
+<h2 id="commands-spc-spc-mysupercommand">commands (spc spc my<sub>super</sub><sub>command</sub>)</h2>
+
+<p>org-md-export-to-markdown     - export to a text file with markdown syntax (my<sub>file.md</sub>)</p>
+
+<h2 id="latex-integration">LaTex integration</h2>
+
+<ul>
+  <li>Characters: α → β</li>
+  <li>(O(n \log n))</li>
+</ul>
+
+<p>\begin{align<em>}
+  3 * 2 + 1 &amp;= 6 + 1<br />
+           &amp;= 7
+\end{align</em>}</p>
+
+<h1 id="spc-commands-1">Spc commands</h1>
+
+<h2 id="spacemacs-config">Spacemacs config</h2>
+
+<p>spc fed  - edit spacemacs dotfile
+spc feR  - reload spacemacs config</p>
+
+<h2 id="toogle">toogle</h2>
+
+<p>spc tn    - toogle line number</p>
+
+<h2 id="ui-toogles">UI toogles</h2>
+
+<p>spc TF    - toogle fullscreen mode</p>
+
+<h2 id="file">file</h2>
+
+<p>spc ft    - toogle neotree
+spc ff    - open file</p>
+
+<h2 id="project">project</h2>
+
+<p>Create en empty file named .projectile in your project root directory</p>
+
+<p>spc pp    - switch project
+spc pf    - find a file in your project
+spc /     - find text in project</p>
+
+<h2 id="buffer">buffer</h2>
+
+<p>spc tab   - last buffer 
+spc bn    - next buffer
+spc bb    - show the list of current buffers
+spc bd    - delete buffer</p>
+
+<h2 id="window">window</h2>
+
+<p>spc wS    - split windows vertical
+spc nb of window - switch to <number of="" window="">
+spc wc    - close a window</number></p>
+
+<h2 id="git">git</h2>
+
+<p>spc gs    - git statu</p>
+
+<h2 id="shell">shell</h2>
+
+<p>spc ‘     - toogle the little shell</p>
+
+<h2 id="others">others</h2>
+
+<p>spc h[x]  - help on [x]
+spc zX    - increase decrease font size</p>
+
+<h2 id="-commands">: commands</h2>
+
+<p>:shell    - start a shell in a buffer</p>
+
+<h1 id="packages">Packages</h1>
+
+<p>spc spc package-install to install a package</p>
+
+:ET

@@ -1,0 +1,78 @@
+I"r<p>= Cmd tips
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+:published_at: 2017-11-24
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title</p>
+
+<p>=== Sizes</p>
+
+<p>know the size of a folder 
+[source, shell]
+—-
+du -sh my_lib/movies # h for human and s for the folder only
+—-</p>
+
+<p>know the disk usage 
+[source, shell]
+—-
+df -h
+—-</p>
+
+<p>=== Arborescence</p>
+
+<p>Display arborescence on 2 row
+[source, shell]
+—-
+tree . -L 2
+—-</p>
+
+<p>=== Text play</p>
+
+<p>Substring text</p>
+
+<h2 id="source-shell">[source, shell]</h2>
+<p>path=”/tyt/tit/tat”
+lawl=${path##*/}
+—-</p>
+
+<p>=== Remove files except</p>
+
+<p>works on bash only :</p>
+
+<h2 id="source-shell-1">[source, shell]</h2>
+<p>$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+—-</p>
+
+<p>=== Tensorflow</p>
+
+<p>this command will launch a bash in tensorflow container with all the scripts located in /home/superuserofthedeath/Documents/scripts/ into /notebooks :</p>
+
+<p>)❯ sudo docker run –rm -it -v /home/superuserofthedeath/Documents/scripts/:/notebooks -p 8888:8888 tensorflow/tensorflow /bin/bash</p>
+
+<p>run without –rm and with –name tf to keep datas
+sudo docker start tf # will run the container
+sudo docker attach tf # will attach to the docker terminal</p>
+
+<p>=== tunnel ssh
+(plex)
+ssh -N -L 3200:server.com:32400 server.com<br />
+http://localhost:3200/web/index.html</p>
+
+<p>=== docker</p>
+
+<p>docker ps     - list all containers
+docker exec   - run a command in a running container</p>
+
+<p>docker-compose down –remove-orphans
+docker-compose up -d (detach)
+docker exec -it plex_container /bin/bash</p>
+
+<p>https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start</p>
+
+:ET

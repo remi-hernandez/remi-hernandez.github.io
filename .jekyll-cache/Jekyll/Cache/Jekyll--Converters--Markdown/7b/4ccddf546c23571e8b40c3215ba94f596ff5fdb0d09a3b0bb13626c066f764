@@ -1,0 +1,129 @@
+I"6<p>= Python unit tests
+:hp-tags: python, unit tests</p>
+
+<p>==== Why ?</p>
+
+<p>You know why because if you don’t what are you doing here ?</p>
+
+<p>==== Using unittest library</p>
+
+<p>===== A basic example :</p>
+
+<h2 id="sourcepython">[source,python]</h2>
+<p>import unittest</p>
+
+<p>def f1(a, b):
+    return a + b</p>
+
+<p>class TestF1(unittest.TestCase):
+    ‘’’
+    This class will test f1
+    ‘’’</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def test_f1(self):
+    res = f1(2, 4)
+    self.assertEqual(res, 6)
+</code></pre></div></div>
+
+<p>if <strong>name</strong> == ‘<strong>main</strong>’:
+    unittest.main()
+—-</p>
+
+<p>And this will result in :</p>
+
+<hr />
+<p>Ran 1 test in 0.001s
+OK
+—-</p>
+
+<p>===== What happens if the test fails :</p>
+
+<h2 id="source-python">[source, python]</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># modify the value in the assertEqual
+def test_f1(self):
+    res = f1(2, 4)
+    self.assertEqual(res, 3) ----
+</code></pre></div></div>
+
+<p>The output is now :</p>
+
+<hr />
+<p>======================================================================
+FAIL: test_f1 (tmp.TestF1)
+———————————————————————-
+Traceback (most recent call last):
+  File “C:\Users\rhz\PycharmProjects\panda\tmp.py”, line 16, in test_f1
+    self.assertEqual(res, 3)
+AssertionError: 6 != 3</p>
+
+<hr />
+<p>Ran 1 test in 0.001s</p>
+
+<p>FAILED (failures=1)
+Process finished with exit code 0
+—-</p>
+
+<p>===== Using setUp and tearDown</p>
+
+<p>The doc says :</p>
+
+<ul>
+  <li>
+    <p>setUp(): method called to prepare the test fixture. This is called immediately before calling the test method</p>
+  </li>
+  <li>
+    <p>tearDown(): method called immediately after the test method has been called and the result recorded. This is called even if the test method raised an exception</p>
+  </li>
+</ul>
+
+<p>This is a stupid example because here setUp is sufficient but in more complex situation tearDown alows us to clean the thing after a test or to do whatever you want.</p>
+
+<h2 id="source-python-1">[source, python]</h2>
+<p>def f1(a, b):
+    return a + b</p>
+
+<p>class TestF1(unittest.TestCase):
+    ‘’’
+    This class will test f1
+    ‘’’</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def setUp(self):
+    self.good_value = 6
+
+def tearDown(self):
+    self.good_value = 6
+
+def test_f1(self):
+    res = f1(2, 4)
+    self.assertEqual(res, self.good_value)
+
+def test_f1_with_bad_value(self):
+    res = f1(2, 4)
+    self.good_value = 3
+    self.assertEqual(res, self.good_value)
+</code></pre></div></div>
+
+<p>if <strong>name</strong> == ‘<strong>main</strong>’:
+    unittest.main()
+—-</p>
+
+<p>The output :</p>
+
+<hr />
+<p>======================================================================
+FAIL: test_f1_with_bad_value (tmp.TestF1)
+———————————————————————-
+Traceback (most recent call last):
+  File “C:\Users\rhz\PycharmProjects\untitled\tmp.py”, line 23, in test_f1_with_bad_value
+    self.assertEqual(res, self.good_value)
+AssertionError: 6 != 3</p>
+
+<hr />
+<p>Ran 2 tests in 0.001s</p>
+
+<p>FAILED (failures=1)</p>
+
+<hr />
+<p>:hide-uri-scheme:
+Url to the doc : https://docs.python.org/3/library/unittest.html#test-cases</p>
+:ET

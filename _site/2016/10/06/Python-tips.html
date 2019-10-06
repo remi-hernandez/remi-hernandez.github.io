@@ -1,0 +1,267 @@
+<p>= Python tips
+:hp-tags: python, tips</p>
+
+<p>==== What’s here ?</p>
+
+<p>Here you will find some tips n tricks around python.</p>
+
+<p>==== List tricks</p>
+
+<p>====== Print a list in one line
+[source,python]
+—-</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>l = [“a”, “b”, “c”]
+“;”.join(l)
+‘a;b;c’</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>l = [1, 2, 3]
+““.join(str(l))
+‘[1, 2, 3]’
+—-</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>====== Get the last elem or go back in a list
+[source,python]
+—-
+l = [“a”, “b”, “c”] 
+print (l[-1]) # Get the last element of the list which will print “c”
+print (l[-2]) # Will print “b”
+—-</p>
+
+<p>====== Get all the odd numbers of a list
+[source,python]
+—-</p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>l = [0, 1, 2, 3, 4, 5]
+l[1::2] # start the list at 1 and go +2 on the iterator
+[1, 3, 5]
+—-
+====== Reverse a full list
+[source,python]
+—-
+l
+[0, 1, 2, 3, 4, 5]
+l = l[::-1]
+l
+[5, 4, 3, 2, 1, 0]
+—-</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>====== Remove duplicates in a list</p>
+
+<p>Using the builtin set() {Sets are unordered collections of distinct objects} we can remove all the duplicates and to go back in a list we can use the list() function.</p>
+
+<h2 id="sourcepython">[source,python]</h2>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>l1 = [1, 2, 3, 1, 2, 3]
+l1 = set(l1)
+l1
+set([1, 2, 3])
+l1 = list(l1)
+l1
+[1, 2, 3]
+—-
+====== string list to int list in one line
+[source,python]
+—-
+l = [“1”, “2”, “3”]
+l = [int(x) for x in l]
+l
+[1, 2, 3]
+—-</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>====== Remove empty string in a list</p>
+
+<h2 id="sourcepython-1">[source,python]</h2>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>l = [“a”, “”, “b”]
+l
+[‘a’, ‘’, ‘b’]
+l = [x for x in l if x]
+l
+[‘a’, ‘b’]
+—-</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>==== Ternary in python
+Added in 2.5 version of python :</p>
+
+<h2 id="sourcepython-2">[source,python]</h2>
+<p>a = 1
+b = 2
+result = 0</p>
+
+<p>result = a if a &gt; b else b
+print (result) # will print 2 for b</p>
+
+<p>result = a if a &lt; b else b
+print (result) # will print 1 for a</p>
+
+<p>#&lt;1&gt;</p>
+
+<p>####</p>
+
+<p>def yes():
+	print “yes”</p>
+
+<p>def no():
+	print “no”</p>
+
+<p>yes() if True else no() 
+yes() if False else no()</p>
+
+<p>#&lt;2&gt;</p>
+
+<hr />
+<p>&lt;1&gt; Will output :</p>
+<blockquote>
+
+  <p>2
+1</p>
+</blockquote>
+
+<p>&lt;2&gt; Will output :</p>
+<blockquote>
+
+  <p>yes
+no</p>
+</blockquote>
+
+<p>==== Syntax *</p>
+
+<p>The single star * unpacks the sequence/collection into positional arguments.</p>
+
+<h2 id="sourcepython-3">[source,python]</h2>
+<p>def sum(a, b):
+    return a + b</p>
+
+<p>values = (1, 2)</p>
+
+<h2 id="s--sumvalues--will-return-the-sum-of-1-and-2">s = sum(*values) # will return the sum of 1 and 2</h2>
+
+<p>==== Multilines import</p>
+
+<p>A nice way to import</p>
+
+<h2 id="source-python">[source, python]</h2>
+<p>from Package.class import(
+        method1,
+        method2,
+    )
+—-</p>
+
+<p>==== How to check if a file with extension .xx is in a folder</p>
+
+<h2 id="source-python-1">[source, python]</h2>
+<p>from os import listdir
+from os.path import isfile, join</p>
+
+<p>lFilesList = [f for f in listdir(self.__fileName) if isfile(join(self.__fileName, f)) and (join(self.__fileName, f)).endswith(“.sda”)]
+if len(lFilesList) &gt; 0:
+   print “There are files”
+—-</p>
+
+<p>==== Get items from a list a if not in b</p>
+
+<p>Use set(b) instead of b, why ? 
+List membership testing is O(n), Set membership testing is O(1)</p>
+
+<p>So if you test list membership in a loop the overall loop is O(n2).</p>
+
+<h2 id="source-python-2">[source, python]</h2>
+<p>a = [1, 2, 3, 4 ,5]
+b = [4, 5, 6, 7]</p>
+
+<p>res = [x for x in a if x not in set(b)]</p>
+
+<h1 id="now-res-is--1-2-3">now res is : [1, 2, 3]</h1>
+<hr />
+
+<p>==== How to check the method existing in a python object</p>
+
+<h2 id="source-python-3">[source, python]</h2>
+<p>[method_name for method_name in dir(object)
+ if callable(getattr(object, method_name))]
+—-</p>
+
+<p>==== Format text</p>
+
+<h2 id="source-python-4">[source, python]</h2>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>s = “hello world”
+s.center(40)
+‘              hello world               ‘</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>’‘.format(‘sample text’)
+‘<strong>**</strong><strong>**</strong><strong>**</strong><em>sample text</em><strong>**</strong><strong>**</strong><strong>**</strong>*’     # * is the fill character.</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>’‘.format(‘sample text’)
+‘                   sample text                    ‘     # with a length of 50.</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>x = 13.949999999999999999
+x
+13.95
+g = float(“{0:.2f}”.format(x))
+g
+13.95
+x == g
+True
+h = round(x, 2)
+h
+13.95
+x == h
+True
+—-</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p>==== script with arguments</p>
+
+<p>Use click library : http://click.pocoo.org/5/</p>
+

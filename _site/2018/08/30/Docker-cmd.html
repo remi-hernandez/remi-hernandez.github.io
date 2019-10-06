@@ -1,0 +1,22 @@
+<p>= Docker cmd
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title</p>
+
+<p>cmd           - action
+docker ps     - list all containers
+docker exec   - run a command in a running container</p>
+
+<p>docker-compose down –remove-orphans
+docker-compose up -d (detach)</p>
+
+<p>https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start</p>
+
+<p>== Debug container</p>
+
+<p>Check the logs of what’s inside of the container. e.g.: we want to check the logs of plex. For it we want to have a shell running inside our container. We will find the name of our container using <code class="highlighter-rouge">docker ps</code>, let’s say “plex_container” and the use <code class="highlighter-rouge">docker exec -it plex_container</code>.</p>
+
+<p>When the container is setted up don’t forget to create a ssh tunnel for the port forwarding <code class="highlighter-rouge">ssh -N -L 3200:server.com:32400 server.com </code> and then go on <code class="highlighter-rouge">http://localhost:3200/web/index.html</code> to claim the server.</p>
+

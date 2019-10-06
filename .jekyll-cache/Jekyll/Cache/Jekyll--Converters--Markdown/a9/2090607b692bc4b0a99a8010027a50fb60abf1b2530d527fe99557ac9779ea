@@ -1,0 +1,45 @@
+I"�<p>= Send a mail on gmail via python
+:hp-tags: python, mail
+:hp-image: /images/cat.jpg</p>
+
+<p>Code to send a mail via gmail with an attachment</p>
+
+<h2 id="sourcepython">[source,python]</h2>
+<p>import smtplib
+from email.MIMEMultipart import MIMEMultipart
+from email.MIMEText import MIMEText
+from email.MIMEBase import MIMEBase
+from email import encoders</p>
+
+<p>fromaddr = “”
+toaddr = “”
+PASSWORD = “”</p>
+
+<p>msg = MIMEMultipart()</p>
+
+<p>msg[‘From’] = fromaddr
+msg[‘To’] = toaddr
+msg[‘Subject’] = “python test”</p>
+
+<p>body = “"”Hey bro, that’s a test ! \o/”””</p>
+
+<p>msg.attach(MIMEText(body, ‘plain’))</p>
+
+<p>filename = “test.zip”
+attachment = open(r’D://test.zip’, “rb”)</p>
+
+<p>part = MIMEBase(‘application’, ‘octet-stream’)
+part.set_payload((attachment).read())
+encoders.encode_base64(part)
+part.add_header(‘Content-Disposition’, “attachment; filename= %s” % filename)</p>
+
+<p>msg.attach(part)</p>
+
+<p>server = smtplib.SMTP(‘smtp.gmail.com’, 587)
+server.starttls()
+server.login(fromaddr, PASSWORD)
+text = msg.as_string()
+server.sendmail(fromaddr, toaddr, text)
+server.quit()
+—-</p>
+:ET

@@ -1,0 +1,22 @@
+I"(<p>= DB tips
+:published_at: 2019-09-29
+:hp-tags: db, sql, tips</p>
+
+<p>//:hp-image: /images/cpp.jpg</p>
+
+<p>=== What’s here ?</p>
+
+<p>Here you will find some tips n tricks around database requests.</p>
+
+<p>Easy request to select stuff which contains a word in a text field 
+[source, sql]
+—-
+SELECT * FROM my_funky_table WHERE text_field LIKE ‘%my_word%’
+—-</p>
+
+<p>Show a spatialite geometry in request :</p>
+
+<h2 id="source-sql">[source, sql]</h2>
+<p>select ST_ASTEXT(geom) from my_funky_table where text_field like ‘%my_word%’
+—-</p>
+:ET

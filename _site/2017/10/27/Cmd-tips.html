@@ -1,0 +1,61 @@
+<p>= Cmd tips</p>
+
+<p>// :hp-image: /covers/cover.png
+:hp-tags: bash, commands, tips, unix
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title</p>
+
+<p>=== Sizes</p>
+
+<p>know the size of a folder 
+[source, shell]
+—-
+du -sh my_lib/movies # h for human and s for the folder only
+—-</p>
+
+<p>know the disk usage 
+[source, shell]
+—-
+df -h
+—-</p>
+
+<p>=== Arborescence</p>
+
+<p>Display arborescence on 2 row
+[source, shell]
+—-
+tree . -L 2
+—-</p>
+
+<p>=== Text play</p>
+
+<p>Substring text</p>
+
+<h2 id="source-shell">[source, shell]</h2>
+<p>path=”/tyt/tit/tat”
+lawl=${path##*/}
+—-</p>
+
+<p>=== Remove files except</p>
+
+<p>works on bash only :</p>
+
+<h2 id="source-shell-1">[source, shell]</h2>
+<p>$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+—-</p>
+
+<p>=== Docker</p>
+
+<p>move docker (var/lib) : https://linuxconfig.org/how-to-move-docker-s-default-var-lib-docker-to-another-directory-on-ubuntu-debian-linux</p>
+
+<p>https://hub.docker.com/r/linuxserver/plex/</p>
+
+<p>https://www.htpcbeginner.com/install-plex-using-docker/</p>
+
+<p>ssh tunnel plex : 
+https://plaza.quickbox.io/t/setting-up-an-ssh-tunnel-for-plex/135</p>

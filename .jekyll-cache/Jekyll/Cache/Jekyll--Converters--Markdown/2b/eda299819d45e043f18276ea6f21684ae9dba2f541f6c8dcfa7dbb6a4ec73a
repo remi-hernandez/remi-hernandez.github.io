@@ -1,0 +1,152 @@
+I"i<p>= Spacemacs
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+:published_at: 2018-05-16
+:hp-tags: spacemacs, tips, shortcuts
+:hp-image: /images/spacemacs.png</p>
+
+<p>#+TITLE: This is spacemacs title</p>
+
+<p>#+OPTIONS: toc:nil</p>
+
+<p>= Org 
+== categories</p>
+
+<p>#+BEGIN_SRC c++
+   void process_stuff(my_super_class* ptr)
+   int a = 2;
+   #+END_SRC</p>
+
+<p>#+BEGIN_SRC python
+     def example(a, b):
+        “””
+        in a src block use ctrlc ‘ (ctrlc + single quote) to edit the code block in editor
+        use ctrlc ctrlc to evaluate it and made appear the results (but doesn’t work for now)
+        “””
+        print (“will process {} + {}”.format(a, b))
+        return (a,b)
+     example(2, 18)
+   #+END_SRC</p>
+
+<p>== Commands
+  | command        | action                                           |
+  |—————-+————————————————–|
+  | shift tab      | changes  fold                                    |
+  | ctrlc and wait | all the commands with description will displayed |
+  | ctrlc ctrle    | export file                                      |
+  | ctrlc ctrlc    | compute part                                     |
+  | ctrlc ctrlt    | cycle through TODO states                        |
+  | ctrlc ctrld    | add a deadline to a TODO element                 |
+  | ctrlc ctrls    | append a datetime                                |</p>
+
+<p>== SPC commands
+   spc mee    - export in different kind of files</p>
+
+<p>== Todo &amp; cie
+*** TODO todo example
+    DEADLINE: &lt;2018-04-20 Fri&gt;
+    at the end of the title line (after example here) hit shift alt enter
+    to go to the next line with another todo
+    use ctrlc ctrld to add a deadline do a todo element</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. under task one.
+2. [ ] under task two.
+3. [ ] 
+</code></pre></div></div>
+
+<p>*** DONE clycle through states
+    CLOSED: [2018-05-15 Tue 13:16]
+    use ctrlc ctrlt tou cylcle through states</p>
+
+<p>*** use list [1/2]
+    use ctrlc ctrlc on one line to set or unset the state
+    - [ ] task one
+    - [X] task two</p>
+
+<p>*** use other list [50%]
+    - [ ] item one
+    - [X] item two</p>
+
+<p>** Schedules
+   SCHEDULED: &lt;2018-05-15 Tue&gt;
+   use ctrlc ctrls to append a datetime
+   move cursor on the datetime and use shift left / right to change the value</p>
+
+<p>** commands (spc spc my_super_command)
+   org-md-export-to-markdown     - export to a text file with markdown syntax (my_file.md)</p>
+
+<p>** LaTex integration</p>
+<ul>
+  <li>Characters: \alpha \rightarrow \beta</li>
+  <li>$O(n \log n)$</li>
+</ul>
+
+<p>\begin{align<em>}
+    3 * 2 + 1 &amp;= 6 + 1<br />
+             &amp;= 7
+  \end{align</em>}</p>
+
+<ul>
+  <li>Spc commands
+** Spacemacs config
+ spc fed  - edit spacemacs dotfile
+ spc feR  - reload spacemacs config</li>
+</ul>
+
+<p>** toogle
+  spc tn    - toogle line number</p>
+
+<p>** UI toogles
+  spc TF    - toogle fullscreen mode</p>
+
+<p>** file
+   spc ft    - toogle neotree
+   spc ff    - open file</p>
+
+<p>** project
+   Create en empty file named .projectile in your project root directory</p>
+
+<p>spc pp    - switch project
+   spc pf    - find a file in your project
+   spc /     - find text in project</p>
+
+<p>** buffer
+   spc tab   - last buffer 
+   spc bn    - next buffer
+   spc bb    - show the list of current buffers
+   spc bd    - delete buffer</p>
+
+<p>** window
+   spc wS    - split windows vertical
+   spc nb of window - switch to <number of="" window="">
+   spc wc    - close a window</number></p>
+
+<p>** git
+   spc gs    - git statu</p>
+
+<p>** shell
+   spc ‘     - toogle the little shell</p>
+
+<p>** others
+   spc h[x]  - help on [x]
+   spc zX    - increase decrease font size</p>
+
+<p>** : commands
+   :shell    - start a shell in a buffer</p>
+
+<ul>
+  <li>
+    <p>Packages</p>
+
+    <p>spc spc package-install to install a package</p>
+
+    <p>En tete a mettre en haut d’un fichier org pour les marges etc
+[org]
+—-
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage[hidelinks]{hyperref}
+#+LATEX_HEADER: \usepackage{palatino}
+—-</p>
+  </li>
+</ul>
+
+:ET

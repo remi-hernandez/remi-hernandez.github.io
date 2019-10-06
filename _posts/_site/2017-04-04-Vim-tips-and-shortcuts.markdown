@@ -74,7 +74,7 @@ ctrl+w / fleche - change de split
 /pattern   - cherche le pattern
 n          - next pattern
 N          - previous pattern
-   - remonte de { en {
+{{ ou }}   - remonte de { en {
 - ou +     - monte ou descends de ligne en se mettant au premier caractère de la ligne.
 ctrl+g     - cherche le pattern courant
 ctrl+n     - autocompletion (et ctrl+p pour aller en arrière)

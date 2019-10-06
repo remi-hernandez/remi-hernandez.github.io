@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T11:54:55+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">__̴ı̴̴̡̡̡ ̡͌l̡̡̡ ̡͌l̡*̡̡ ̴̡ı̴̴̡ ̡̡͡|̲̲̲͡͡͡ ̲▫̲͡ ̲̲̲͡͡π̲̲͡͡ ̲̲͡▫̲̲͡͡ ̲|̡̡̡ ̡ ̴̡ı̴̡̡ ̡͌l̡̡̡̡.___</title><subtitle></subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2019/10/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-10-05T19:32:53+00:00</published><updated>2019-10-05T19:32:53+00:00</updated><id>http://localhost:4000/jekyll/update/2019/10/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2019/10/05/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Db Tips</title><link href="http://localhost:4000/2019/09/29/DB-tips.adoc" rel="alternate" type="text/html" title="Db Tips" /><published>2019-09-29T00:00:00+00:00</published><updated>2019-09-29T00:00:00+00:00</updated><id>http://localhost:4000/2019/09/29/DB-tips</id><content type="html" xml:base="http://localhost:4000/2019/09/29/DB-tips.adoc">= DB tips
+:published_at: 2019-09-29
+:hp-tags: db, sql, tips
+
+//:hp-image: /images/cpp.jpg
+
+
+=== What's here ?
+
+Here you will find some tips n tricks around database requests.
+
+Easy request to select stuff which contains a word in a text field 
+[source, sql]
+----
+SELECT * FROM my_funky_table WHERE text_field LIKE '%my_word%'
+----
+
+Show a spatialite geometry in request :
+
+[source, sql]
+----
+select ST_ASTEXT(geom) from my_funky_table where text_field like '%my_word%'
+----</content><author><name></name></author><summary type="html">= DB tips :published_at: 2019-09-29 :hp-tags: db, sql, tips</summary></entry><entry><title type="html">Docker Bro</title><link href="http://localhost:4000/2018/08/30/Docker-bro.adoc" rel="alternate" type="text/html" title="Docker Bro" /><published>2018-08-30T00:00:00+00:00</published><updated>2018-08-30T00:00:00+00:00</updated><id>http://localhost:4000/2018/08/30/Docker-bro</id><content type="html" xml:base="http://localhost:4000/2018/08/30/Docker-bro.adoc">= Docker bro
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+
+cmd    - action
+docker ps     - list all containers
+docker exec   - run a command in a running container
+
+
+docker-compose down --remove-orphans
+docker-compose up -d (detach)
+
+https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start
+
+
+== Debug plex
+
+Check the logs of what's inside of the container. e.g.: we want to check the logs of plex. For it we want to have a shell running inside our container. We will find the name of our container using `docker ps`, let's say &quot;plex_container&quot; and the use `docker exec -it plex_container`.
+
+When the container is setted up don't forget to create a ssh tunnel for the port forwarding `ssh -N -L 3200:server.com:32400 server.com ` and then go on `http://localhost:3200/web/index.html` to claim the server.</content><author><name></name></author><summary type="html">= Docker bro // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. // :hp-image: /covers/cover.png // :published_at: 2019-01-31 // :hp-tags: HubPress, Blog, Open_Source, // :hp-alt-title: My English Title</summary></entry><entry><title type="html">Docker Cmd</title><link href="http://localhost:4000/2018/08/30/Docker-cmd.adoc" rel="alternate" type="text/html" title="Docker Cmd" /><published>2018-08-30T00:00:00+00:00</published><updated>2018-08-30T00:00:00+00:00</updated><id>http://localhost:4000/2018/08/30/Docker-cmd</id><content type="html" xml:base="http://localhost:4000/2018/08/30/Docker-cmd.adoc">= Docker cmd
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+
+cmd           - action
+docker ps     - list all containers
+docker exec   - run a command in a running container
+
+
+docker-compose down --remove-orphans
+docker-compose up -d (detach)
+
+https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start
+
+
+== Debug container
+
+Check the logs of what's inside of the container. e.g.: we want to check the logs of plex. For it we want to have a shell running inside our container. We will find the name of our container using `docker ps`, let's say &quot;plex_container&quot; and the use `docker exec -it plex_container`.
+
+When the container is setted up don't forget to create a ssh tunnel for the port forwarding `ssh -N -L 3200:server.com:32400 server.com ` and then go on `http://localhost:3200/web/index.html` to claim the server.</content><author><name></name></author><summary type="html">= Docker cmd // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. // :hp-image: /covers/cover.png // :published_at: 2019-01-31 // :hp-tags: HubPress, Blog, Open_Source, // :hp-alt-title: My English Title</summary></entry><entry><title type="html">Rust Tips N Tricks</title><link href="http://localhost:4000/2018/05/24/Rust-tips-n-tricks.adoc" rel="alternate" type="text/html" title="Rust Tips N Tricks" /><published>2018-05-24T00:00:00+00:00</published><updated>2018-05-24T00:00:00+00:00</updated><id>http://localhost:4000/2018/05/24/Rust-tips-n-tricks</id><content type="html" xml:base="http://localhost:4000/2018/05/24/Rust-tips-n-tricks.adoc">= Rust tips n tricks
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+:published_at: 2018-05-24
+:hp-tags: Rust, tips, tricks
+// :hp-alt-title: My English Title
+
+== Basics</content><author><name></name></author><summary type="html">= Rust tips n tricks // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. // :hp-image: /covers/cover.png :published_at: 2018-05-24 :hp-tags: Rust, tips, tricks // :hp-alt-title: My English Title</summary></entry><entry><title type="html">Spacemacs</title><link href="http://localhost:4000/2018/05/16/Spacemacs.adoc" rel="alternate" type="text/html" title="Spacemacs" /><published>2018-05-16T00:00:00+00:00</published><updated>2018-05-16T00:00:00+00:00</updated><id>http://localhost:4000/2018/05/16/Spacemacs</id><content type="html" xml:base="http://localhost:4000/2018/05/16/Spacemacs.adoc">= Spacemacs
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+:published_at: 2018-05-16
+:hp-tags: spacemacs, tips, shortcuts
+:hp-image: /images/spacemacs.png
+
+
+
+#+TITLE: This is spacemacs title
+
+#+OPTIONS: toc:nil
+
+= Org 
+== categories
+
+   #+BEGIN_SRC c++
+   void process_stuff(my_super_class* ptr)
+   int a = 2;
+   #+END_SRC
+
+   #+BEGIN_SRC python
+     def example(a, b):
+        &quot;&quot;&quot;
+        in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
+        use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
+        &quot;&quot;&quot;
+        print (&quot;will process {} + {}&quot;.format(a, b))
+        return (a,b)
+     example(2, 18)
+   #+END_SRC
+
+== Commands
+  | command        | action                                           |
+  |----------------+--------------------------------------------------|
+  | shift tab      | changes  fold                                    |
+  | ctrlc and wait | all the commands with description will displayed |
+  | ctrlc ctrle    | export file                                      |
+  | ctrlc ctrlc    | compute part                                     |
+  | ctrlc ctrlt    | cycle through TODO states                        |
+  | ctrlc ctrld    | add a deadline to a TODO element                 |
+  | ctrlc ctrls    | append a datetime                                |
+ 
+== SPC commands
+   spc mee    - export in different kind of files
+
+== Todo &amp; cie
+*** TODO todo example
+    DEADLINE: &lt;2018-04-20 Fri&gt;
+    at the end of the title line (after example here) hit shift alt enter
+    to go to the next line with another todo
+    use ctrlc ctrld to add a deadline do a todo element
+    
+    1. under task one.
+    2. [ ] under task two.
+    3. [ ] 
+    
+*** DONE clycle through states
+    CLOSED: [2018-05-15 Tue 13:16]
+    use ctrlc ctrlt tou cylcle through states
+
+*** use list [1/2]
+    use ctrlc ctrlc on one line to set or unset the state
+    - [ ] task one
+    - [X] task two
+
+*** use other list [50%]
+    - [ ] item one
+    - [X] item two
+
+** Schedules
+   SCHEDULED: &lt;2018-05-15 Tue&gt;
+   use ctrlc ctrls to append a datetime
+   move cursor on the datetime and use shift left / right to change the value
+     
+   
+
+   
+
+
+** commands (spc spc my_super_command)
+   org-md-export-to-markdown     - export to a text file with markdown syntax (my_file.md)
+  
+** LaTex integration
+  - Characters: \alpha \rightarrow \beta
+  - $O(n \log n)$
+  
+  \begin{align*}
+    3 * 2 + 1 &amp;= 6 + 1\\
+             &amp;= 7
+  \end{align*}
+
+* Spc commands
+** Spacemacs config
+   spc fed  - edit spacemacs dotfile
+   spc feR  - reload spacemacs config
+
+** toogle
+  spc tn    - toogle line number
+
+** UI toogles
+  spc TF    - toogle fullscreen mode
+  
+** file
+   spc ft    - toogle neotree
+   spc ff    - open file
+
+** project
+   Create en empty file named .projectile in your project root directory
+
+   spc pp    - switch project
+   spc pf    - find a file in your project
+   spc /     - find text in project
+
+** buffer
+   spc tab   - last buffer 
+   spc bn    - next buffer
+   spc bb    - show the list of current buffers
+   spc bd    - delete buffer
+
+** window
+   spc wS    - split windows vertical
+   spc nb of window - switch to &lt;number of window&gt;
+   spc wc    - close a window
+
+** git
+   spc gs    - git statu
+
+** shell
+   spc '     - toogle the little shell
+
+** others
+   spc h[x]  - help on [x]
+   spc zX    - increase decrease font size
+
+** : commands
+   :shell    - start a shell in a buffer
+
+* Packages
+  
+  spc spc package-install to install a package
+  
+  En tete a mettre en haut d'un fichier org pour les marges etc
+  [org]
+  ----
+  #+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+  #+LATEX_HEADER: \usepackage[hidelinks]{hyperref}
+  #+LATEX_HEADER: \usepackage{palatino}
+  ----</content><author><name></name></author><summary type="html">= Spacemacs // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. :published_at: 2018-05-16 :hp-tags: spacemacs, tips, shortcuts :hp-image: /images/spacemacs.png</summary></entry><entry><title type="html">Spacemacs</title><link href="http://localhost:4000/2018/05/14/Spacemacs.adoc" rel="alternate" type="text/html" title="Spacemacs" /><published>2018-05-14T00:00:00+00:00</published><updated>2018-05-14T00:00:00+00:00</updated><id>http://localhost:4000/2018/05/14/Spacemacs</id><content type="html" xml:base="http://localhost:4000/2018/05/14/Spacemacs.adoc">= Spacemacs
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+
+
+
+# Org
+
+
+## categories
+
+    void process_stuff(my_super_class* ptr);
+    
+    int a = 2;
+
+    def example(a, b):
+       &quot;&quot;&quot;
+       in a src block use ctrlc ' (ctrlc + single quote) to edit the code block in editor
+       use ctrlc ctrlc to evaluate it and made appear the results (but doesn't work for now)
+       &quot;&quot;&quot;
+       print (&quot;will process {} + {}&quot;.format(a, b))
+       return (a,b)
+    
+    example(2, 18)
+
+
+## Commands
+
+&lt;table border=&quot;2&quot; cellspacing=&quot;0&quot; cellpadding=&quot;6&quot; rules=&quot;groups&quot; frame=&quot;hsides&quot;&gt;
+
+
+&lt;colgroup&gt;
+&lt;col  class=&quot;org-left&quot; /&gt;
+
+&lt;col  class=&quot;org-left&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th scope=&quot;col&quot; class=&quot;org-left&quot;&gt;command&lt;/th&gt;
+&lt;th scope=&quot;col&quot; class=&quot;org-left&quot;&gt;action&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;shift tab&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;changes  fold&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;ctrlc and wait&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;all the commands with description will displayed&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;ctrlc ctrle&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;export file&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;ctrlc ctrlc&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;compute part&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;ctrlc ctrlt&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;cycle through TODO states&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;ctrlc ctrld&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;add a deadline to a TODO element&lt;/td&gt;
+&lt;/tr&gt;
+
+
+&lt;tr&gt;
+&lt;td class=&quot;org-left&quot;&gt;ctrlc ctrls&lt;/td&gt;
+&lt;td class=&quot;org-left&quot;&gt;append a datetime&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+## SPC commands
+
+spc mee    - export in different kind of files
+
+
+## Todo &amp; cie
+
+
+### TODO todo example
+
+at the end of the title line (after example here) hit shift alt enter
+to go to the next line with another todo
+use ctrlc ctrld to add a deadline do a todo element
+
+1.  under task one.
+2.  [ ] under task two.
+3.  [ ] 
+
+
+### DONE clycle through states
+
+use ctrlc ctrlt tou cylcle through states
+
+
+### use list &lt;code&gt;[1/2]&lt;/code&gt;
+
+use ctrlc ctrlc on one line to set or unset the state
+
+-   [ ] task one
+-   [X] task two
+
+
+### use other list &lt;code&gt;[50%]&lt;/code&gt;
+
+-   [ ] item one
+-   [X] item two
+
+
+## Schedules
+
+use ctrlc ctrls to append a datetime
+move cursor on the datetime and use shift left / right to change the value
+
+
+## commands (spc spc my&lt;sub&gt;super&lt;/sub&gt;&lt;sub&gt;command&lt;/sub&gt;)
+
+org-md-export-to-markdown     - export to a text file with markdown syntax (my&lt;sub&gt;file.md&lt;/sub&gt;)
+
+
+## LaTex integration
+
+-   Characters: &amp;alpha; &amp;rarr; &amp;beta;
+-   \(O(n \log n)\)
+
+\begin{align*}
+  3 * 2 + 1 &amp;= 6 + 1\\
+           &amp;= 7
+\end{align*}
+
+
+# Spc commands
+
+
+## Spacemacs config
+
+spc fed  - edit spacemacs dotfile
+spc feR  - reload spacemacs config
+
+
+## toogle
+
+spc tn    - toogle line number
+
+
+## UI toogles
+
+spc TF    - toogle fullscreen mode
+
+
+## file
+
+spc ft    - toogle neotree
+spc ff    - open file
+
+
+## project
+
+Create en empty file named .projectile in your project root directory
+
+spc pp    - switch project
+spc pf    - find a file in your project
+spc /     - find text in project
+
+
+## buffer
+
+spc tab   - last buffer 
+spc bn    - next buffer
+spc bb    - show the list of current buffers
+spc bd    - delete buffer
+
+
+## window
+
+spc wS    - split windows vertical
+spc nb of window - switch to &lt;number of window&gt;
+spc wc    - close a window
+
+
+## git
+
+spc gs    - git statu
+
+
+## shell
+
+spc '     - toogle the little shell
+
+
+## others
+
+spc h[x]  - help on [x]
+spc zX    - increase decrease font size
+
+
+## : commands
+
+:shell    - start a shell in a buffer
+
+
+# Packages
+
+spc spc package-install to install a package</content><author><name></name></author><summary type="html">= Spacemacs // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. // :hp-image: /covers/cover.png // :published_at: 2019-01-31 // :hp-tags: HubPress, Blog, Open_Source, // :hp-alt-title: My English Title</summary></entry><entry><title type="html">Qml Tips</title><link href="http://localhost:4000/2018/04/06/Qml-tips.adoc" rel="alternate" type="text/html" title="Qml Tips" /><published>2018-04-06T00:00:00+00:00</published><updated>2018-04-06T00:00:00+00:00</updated><id>http://localhost:4000/2018/04/06/Qml-tips</id><content type="html" xml:base="http://localhost:4000/2018/04/06/Qml-tips.adoc">= Qml tips
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+// :published_at: 2019-01-31
+:hp-tags: Qt, Qml
+// :hp-alt-title: My English Title
+
+In an item (A) which handle the position of his sons (B, BB, BBB) (e.g.: a RowLayout) you don't have to put anchors.fill: parent to one of the sons, if you do this the son's position management will be broken.
+
+In this example the rectangle B is used to do a background which is wrong, the right solution is to put this rectangle at the root, as a parent of the RowLayout.
+
+[source,javascript]
+----
+RowLayout {
+ 	id: A
+    Rectangle {
+    	id: B
+        anchors.fill: parent // don't do this !
+        color: &quot;red&quot;
+    }
+    
+    Rectangle {
+    	id: BB
+    }
+    
+    Rectangle {
+    	id: BBB
+    }
+}
+
+----</content><author><name></name></author><summary type="html">= Qml tips // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. // :hp-image: /covers/cover.png // :published_at: 2019-01-31 :hp-tags: Qt, Qml // :hp-alt-title: My English Title</summary></entry><entry><title type="html">Cmd Tips</title><link href="http://localhost:4000/2017/11/24/Cmd-tips.adoc" rel="alternate" type="text/html" title="Cmd Tips" /><published>2017-11-24T00:00:00+00:00</published><updated>2017-11-24T00:00:00+00:00</updated><id>http://localhost:4000/2017/11/24/Cmd-tips</id><content type="html" xml:base="http://localhost:4000/2017/11/24/Cmd-tips.adoc">= Cmd tips
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+:published_at: 2017-11-24
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+=== Sizes
+
+know the size of a folder 
+[source, shell]
+----
+du -sh my_lib/movies # h for human and s for the folder only
+----
+
+know the disk usage 
+[source, shell]
+----
+df -h
+----
+
+=== Arborescence
+
+Display arborescence on 2 row
+[source, shell]
+----
+tree . -L 2
+----
+
+=== Text play
+
+Substring text
+
+[source, shell]
+----
+path=&quot;/tyt/tit/tat&quot;
+lawl=${path##*/}
+----
+
+=== Remove files except
+
+works on bash only : 
+
+[source, shell]
+----
+$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+----
+
+
+=== Tensorflow
+
+this command will launch a bash in tensorflow container with all the scripts located in /home/superuserofthedeath/Documents/scripts/ into /notebooks : 
+
+)❯ sudo docker run --rm -it -v /home/superuserofthedeath/Documents/scripts/:/notebooks -p 8888:8888 tensorflow/tensorflow /bin/bash
+
+run without --rm and with --name tf to keep datas
+sudo docker start tf # will run the container
+sudo docker attach tf # will attach to the docker terminal
+
+
+=== tunnel ssh
+(plex)
+ssh -N -L 3200:server.com:32400 server.com  
+http://localhost:3200/web/index.html
+
+=== docker
+
+docker ps     - list all containers
+docker exec   - run a command in a running container
+
+
+docker-compose down --remove-orphans
+docker-compose up -d (detach)
+docker exec -it plex_container /bin/bash
+
+https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start</content><author><name></name></author><summary type="html">= Cmd tips // See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters. // :hp-image: /covers/cover.png :published_at: 2017-11-24 // :hp-tags: HubPress, Blog, Open_Source, // :hp-alt-title: My English Title</summary></entry><entry><title type="html">Cmd Tips</title><link href="http://localhost:4000/2017/10/27/Cmd-tips.adoc" rel="alternate" type="text/html" title="Cmd Tips" /><published>2017-10-27T00:00:00+00:00</published><updated>2017-10-27T00:00:00+00:00</updated><id>http://localhost:4000/2017/10/27/Cmd-tips</id><content type="html" xml:base="http://localhost:4000/2017/10/27/Cmd-tips.adoc">= Cmd tips
+
+// :hp-image: /covers/cover.png
+:hp-tags: bash, commands, tips, unix
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+=== Sizes
+
+know the size of a folder 
+[source, shell]
+----
+du -sh my_lib/movies # h for human and s for the folder only
+----
+
+know the disk usage 
+[source, shell]
+----
+df -h
+----
+
+=== Arborescence
+
+Display arborescence on 2 row
+[source, shell]
+----
+tree . -L 2
+----
+
+=== Text play
+
+Substring text
+
+[source, shell]
+----
+path=&quot;/tyt/tit/tat&quot;
+lawl=${path##*/}
+----
+
+=== Remove files except
+
+works on bash only : 
+
+[source, shell]
+----
+$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+----
+
+=== Docker
+
+move docker (var/lib) : https://linuxconfig.org/how-to-move-docker-s-default-var-lib-docker-to-another-directory-on-ubuntu-debian-linux
+
+https://hub.docker.com/r/linuxserver/plex/
+
+https://www.htpcbeginner.com/install-plex-using-docker/
+
+ssh tunnel plex : 
+https://plaza.quickbox.io/t/setting-up-an-ssh-tunnel-for-plex/135</content><author><name></name></author><summary type="html">= Cmd tips</summary></entry></feed>

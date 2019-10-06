@@ -1,0 +1,84 @@
+= Cmd tips
+// See https://hubpress.gitbooks.io/hubpress-knowledgebase/content/ for information about the parameters.
+// :hp-image: /covers/cover.png
+:published_at: 2017-11-24
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+=== Sizes
+
+know the size of a folder 
+[source, shell]
+----
+du -sh my_lib/movies # h for human and s for the folder only
+----
+
+know the disk usage 
+[source, shell]
+----
+df -h
+----
+
+=== Arborescence
+
+Display arborescence on 2 row
+[source, shell]
+----
+tree . -L 2
+----
+
+=== Text play
+
+Substring text
+
+[source, shell]
+----
+path="/tyt/tit/tat"
+lawl=${path##*/}
+----
+
+=== Remove files except
+
+works on bash only : 
+
+[source, shell]
+----
+$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+----
+
+
+=== Tensorflow
+
+this command will launch a bash in tensorflow container with all the scripts located in /home/superuserofthedeath/Documents/scripts/ into /notebooks : 
+
+)❯ sudo docker run --rm -it -v /home/superuserofthedeath/Documents/scripts/:/notebooks -p 8888:8888 tensorflow/tensorflow /bin/bash
+
+run without --rm and with --name tf to keep datas
+sudo docker start tf # will run the container
+sudo docker attach tf # will attach to the docker terminal
+
+
+=== tunnel ssh
+(plex)
+ssh -N -L 3200:server.com:32400 server.com  
+http://localhost:3200/web/index.html
+
+=== docker
+
+docker ps     - list all containers
+docker exec   - run a command in a running container
+
+
+docker-compose down --remove-orphans
+docker-compose up -d (detach)
+docker exec -it plex_container /bin/bash
+
+https://stackoverflow.com/questions/33715499/what-is-the-difference-between-docker-compose-up-and-docker-compose-start
+
+
+

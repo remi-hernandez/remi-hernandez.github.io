@@ -1,0 +1,16 @@
+= DB tips
+:published_at: 2017-09-29
+:hp-tags: db, sql, tips
+
+//:hp-image: /images/cpp.jpg
+
+
+=== What's here ?
+
+Here you will find some tips n tricks around database requests.
+
+Easy request to select stuff which contains a word in a text field 
+[source, sql]
+----
+SELECT * FROM my_funky_table WHERE text_field LIKE '%my_word%'
+----

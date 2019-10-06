@@ -1,0 +1,63 @@
+= Cmd tips
+
+// :hp-image: /covers/cover.png
+:hp-tags: bash, commands, tips, unix
+// :hp-tags: HubPress, Blog, Open_Source,
+// :hp-alt-title: My English Title
+
+=== Sizes
+
+know the size of a folder 
+[source, shell]
+----
+du -sh my_lib/movies # h for human and s for the folder only
+----
+
+know the disk usage 
+[source, shell]
+----
+df -h
+----
+
+=== Arborescence
+
+Display arborescence on 2 row
+[source, shell]
+----
+tree . -L 2
+----
+
+=== Text play
+
+Substring text
+
+[source, shell]
+----
+path="/tyt/tit/tat"
+lawl=${path##*/}
+----
+
+=== Remove files except
+
+works on bash only : 
+
+[source, shell]
+----
+$ shopt -s extglob
+$ ls
+asd  d  erg  gf  jwpw  poc  t  ta.py  toto.py  tu  w  wefgj
+$ rm !(*.py)
+$ ls
+ta.py  toto.py
+----
+
+=== Docker
+
+move docker (var/lib) : https://linuxconfig.org/how-to-move-docker-s-default-var-lib-docker-to-another-directory-on-ubuntu-debian-linux
+
+https://hub.docker.com/r/linuxserver/plex/
+
+https://www.htpcbeginner.com/install-plex-using-docker/
+
+ssh tunnel plex : 
+https://plaza.quickbox.io/t/setting-up-an-ssh-tunnel-for-plex/135

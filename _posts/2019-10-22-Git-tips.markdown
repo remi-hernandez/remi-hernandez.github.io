@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "Git tips"
+date:   2019-10-14 16:39:53 +0000
+categories: dev git 
+---
+
+# Git Stash
+
+From man git-stash :  
+> show [<stash>]
+       Show the changes recorded in the stash as a diff between the stashed state and
+       its original parent. When no <stash> is given, shows the latest one. By default,
+       the command shows the diffstat, but it will accept any format known to git diff
+       (e.g., git stash show -p stash@{1} to view the second most recent stash in patch
+       form).
+       
+To list the stashed modifications :   
+`git stash list`
+
+To show files changed in the last stash :  
+`git stash show`
+
+So, to view the content of the most recent stash, run :  
+`git stash show -p`
+
+To view the content of an arbitrary stash, run something like :  
+`git stash show -p stash@{1}`
+
+Delete a stash :  
+`git stash drop stash@{n}`  
+
+Apply a stash :  
+`git stash apply stash@{0}`

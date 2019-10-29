@@ -327,4 +327,6 @@ p2->other = p1; // p2 references p1
 
 // Oops, the reference count of of p1 and p2 never goes to zero!
 // The objects are never destroyed!
-{% endhighlight %
+{% endhighlight %}
+#### weak_ptr
+same as above, but it's a 'slave' for a shared_ptr, can't deallocate

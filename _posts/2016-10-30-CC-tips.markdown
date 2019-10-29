@@ -1,14 +1,17 @@
-= C/C++ tips
-:hp-tags: c, c++, tips
-:hp-image: /images/cpp.jpg
+---
+layout: post
+title:  "Git tips"
+date:   2019-10-14 16:39:53 +0000
+categories: dev c c++ tips
+---
 
-
-=== What's here ?
+# C/C++ tips
+### What's here ?
 
 Here you will find some tips n tricks around C++.
 
 
-=== Ternary
+### Ternary
 
 [source,cpp]
 ----
@@ -18,7 +21,7 @@ bool test = true;
 
 ----
 
-=== Get int* len on linux and windows
+### Get int* len on linux and windows
 
 [source,cpp]
 ----
@@ -46,7 +49,7 @@ int main(int argc, char**argv)
 }
 ----
 
-=== Two ways to iterate
+### Two ways to iterate
 
 [source,cpp]
 ----
@@ -60,7 +63,7 @@ for (double lon: lonWaypoints)
     qDebug() << ">> latWay : " << lon;
 ----
 
-==== cpp method callable from qml
+#### cpp method callable from qml
 [source,cpp]
 ----
 
@@ -80,14 +83,14 @@ onMyEvent: {
 }
 ----
 
-=== cast
+### cast
 
 dynamic_cast pour les classes héritées surtout, 
 static_cast pour les types de base,
 reinterpret_cast pour forcer un cast de n'importe quoi vers n'importe quoi
 et const_cast pour pouvoir passer des string en entrée à des vieilles fonctions C qui veulent des char*
 
-=== Concat arrays C style in C++
+### Concat arrays C style in C++
 
 [source,cpp]
 ----
@@ -138,7 +141,7 @@ int main()
 ----
 
 
-=== Pragma and warnings
+### Pragma and warnings
 
 You can use pragma to lower the warnings level at build time or to disable some kinds of warnings.
 
@@ -162,7 +165,7 @@ strcpy();
 #endif
 ----
 
-=== Create a class to not include it
+### Create a class to not include it
 
 When you have namespace tata with in it namespace tutu and in it a class myClass and you want to have a pointer of myClass type in a class, to faster the build in .h don't include the "myClass.h", include it only in cpp and prefer this way : 
 
@@ -185,7 +188,7 @@ private:
 
 ----
 
-=== Random between min and max
+### Random between min and max
 [source,cpp]
 ----
 #include <iostream>
@@ -260,3 +263,68 @@ const char *foo(void); /* ok, `foo()` returns a pointer to a qualified object */
 
 Note that for class types, the const for return values is not meaningless, as you are allowed to call modifying member functions on non-const rvalues. (We just had this here with strings the other day: (s1+s2).append(s3).) As usual, litb's answer explains all this both in detail and correctness.
 
+### pointers handling
+
+#### scope and unique_pointer
+
+{% highlight cpp %}
+void f()
+{
+    {
+       std::unique_ptr<MyObject> ptr(new MyObject());
+       ptr->DoSomethingUseful();
+    } // ptr goes out of scope -- 
+      // the MyObject is automatically destroyed.
+
+    // ptr->Oops(); // Compile error: "ptr" not defined
+                    // since it is no longer in scope.
+}
+{% endhighlight %}
+
+std::unique_ptr instances cannot be copied. This prevents the pointer from being deleted multiple times (incorrectly). You can, however, pass references to it around to other functions you call.
+
+std::unique_ptrs are useful when you want to tie the lifetime of the object to a particular block of code, or if you embedded it as member data inside another object, the lifetime of that other object. The object exists until the containing block of code is exited, or until the containing object is itself destroyed.
+
+
+#### shared ptr
+A more complex smart pointer policy involves reference counting the pointer. This does allow the pointer to be copied. When the last "reference" to the object is destroyed, the object is deleted. 
+
+{% highlight cpp %}
+void f()
+{
+    typedef std::shared_ptr<MyObject> MyObjectPtr; // nice short alias
+    MyObjectPtr p1; // Empty
+
+    {
+        MyObjectPtr p2(new MyObject());
+        // There is now one "reference" to the created object
+        p1 = p2; // Copy the pointer.
+        // There are now two references to the object.
+    } // p2 is destroyed, leaving one reference to the object.
+} // p1 is destroyed, leaving a reference count of zero. 
+  // The object is deleted.
+  
+{% endhighlight %}
+  
+  Reference counted pointers are very useful when the lifetime of your object is much more complicated, and is not tied directly to a particular section of code or to another object.
+
+There is one drawback to reference counted pointers — the possibility of creating a dangling reference:
+{% highlight cpp %}
+// Create the smart pointer on the heap
+MyObjectPtr* pp = new MyObjectPtr(new MyObject())
+// Hmm, we forgot to destroy the smart pointer,
+// because of that, the object is never destroyed!
+
+// another possibility is to create circular references
+struct Owner {
+   std::shared_ptr<Owner> other;
+};
+
+std::shared_ptr<Owner> p1 (new Owner());
+std::shared_ptr<Owner> p2 (new Owner());
+p1->other = p2; // p1 references p2
+p2->other = p1; // p2 references p1
+
+// Oops, the reference count of of p1 and p2 never goes to zero!
+// The objects are never destroyed!
+{% endhighlight %

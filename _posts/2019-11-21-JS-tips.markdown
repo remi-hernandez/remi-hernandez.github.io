@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "JS tips "
+date:   2019-10-14 16:39:53 +0000
+categories: dev javascript 
+---
+
+Nice post about promises [here](https://dev.to/bunnydunker/i-promise-you-ll-know-promises-after-this-83k)

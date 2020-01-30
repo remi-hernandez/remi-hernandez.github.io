@@ -13,3 +13,6 @@ https://github.com/Philip-Scott/Spice-up
 
 === Disk space
 windows : winDirStat https://windirstat.net/download.html
+
+=== ssh client nice with low connexion 
+https://mosh.org
